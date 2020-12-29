@@ -1,0 +1,278 @@
+J:\OTHER\My Docs\C# Items\My Projects\Rohaab\Rohab - Fasli\Backup\Rohab\bin\Debug\Rohab.exe.config
+G:\OTHER\My Docs\C# Items\My Projects\Rohaab\Rohab - Fasli\Backup\Rohab\bin\Debug\Rohab.exe.config
+F:\OTHER\My Docs\C# Items\My Projects\Rohaab\Rohab - Fasli\Backup\Rohab\bin\Debug\Rohab.exe.config
+D:\OTHER\My Docs\C# Items\My Projects\Rohaab\Rohab - Fasli\Backup\Rohab\bin\Debug\Rohab.exe.config
+I:\Rohab\Rohab\obj\Debug\ResolveAssemblyReference.cache
+I:\Rohab\Rohab\obj\Debug\Rohab.addclass.resources
+I:\Rohab\Rohab\obj\Debug\Rohab.editclass.resources
+I:\Rohab\Rohab\obj\Debug\Rohab.classview.resources
+I:\Rohab\Rohab\obj\Debug\Rohab.image.resources
+I:\Rohab\Rohab\obj\Debug\Rohab.addteacher.resources
+I:\Rohab\Rohab\obj\Debug\Rohab.teacherview.resources
+I:\Rohab\Rohab\obj\Debug\Rohab.editteacher.resources
+I:\Rohab\Rohab\obj\Debug\Rohab.editstd.resources
+I:\Rohab\Rohab\obj\Debug\Rohab.Form1.resources
+I:\Rohab\Rohab\obj\Debug\Rohab.addstd.resources
+I:\Rohab\Rohab\obj\Debug\Rohab.stdview.resources
+I:\Rohab\Rohab\obj\Debug\Rohab.csproj.GenerateResource.Cache
+I:\Rohab\Rohab\obj\Debug\Rohab.addcourse.resources
+I:\Rohab\Rohab\obj\Debug\Rohab.frmaddAmoozeshgah.resources
+I:\Rohab\Rohab\obj\Debug\Rohab.frmChpass.resources
+I:\Rohab\Rohab\obj\Debug\Rohab.frmLogin.resources
+I:\Rohab\Rohab\obj\Debug\Rohab.frmGhabzDaryaft.resources
+I:\Rohab\Rohab\obj\Debug\Rohab.frmGhabzView.resources
+I:\Rohab\Rohab\obj\Debug\Rohab.frmGhabzEslah.resources
+I:\Rohab\Rohab\obj\Debug\Rohab.fromMonthPayers.resources
+I:\Rohab\Rohab\obj\Debug\Rohab.frmGhabzPardakht.resources
+I:\Rohab\Rohab\obj\Debug\Rohab.frmPaymentEslah.resources
+I:\Rohab\Rohab\obj\Debug\Rohab.frmPaymentsView.resources
+I:\Rohab\Rohab\obj\Debug\Rohab.CloseClass.resources
+I:\Rohab\Rohab\obj\Debug\Rohab.frmHozoor.resources
+I:\Rohab\Rohab\obj\Debug\Rohab.frmHozoorView.resources
+I:\Rohab\Rohab\obj\Debug\Rohab.frmHozoorEdit.resources
+I:\Rohab\Rohab\obj\Debug\Rohab.frmGhabz_koliPrintViewer.resources
+I:\Rohab\Rohab\obj\Debug\RdlCompile.cache
+I:\Rohab\Rohab\obj\Debug\RdlCompile.compiled
+I:\Rohab\Rohab\obj\Debug\Rohab.frmPayments_koliPrintViewer.resources
+I:\Rohab\Rohab\obj\Debug\Rohab.frmTeacherPrintViewer.resources
+I:\Rohab\Rohab\obj\Debug\Rohab.frmStdPrintViewer.resources
+I:\Rohab\Rohab\obj\Debug\Rohab.frmStdPrintViewerIndivi.resources
+I:\Rohab\Rohab\obj\Debug\Rohab.frmClassesPrintViewer.resources
+I:\Rohab\Rohab\obj\Debug\Rohab.frmHozoorPrintViewer.resources
+I:\Rohab\Rohab\obj\Debug\Rohab.frmIncomePrintViewer.resources
+I:\Rohab\Rohab\obj\Debug\Rohab.frmBackupView.resources
+I:\Rohab\Rohab\bin\Debug\MusicAcademy.exe.config
+I:\Rohab\Rohab\bin\Debug\MusicAcademy.exe
+I:\Rohab\Rohab\bin\Debug\MusicAcademy.pdb
+I:\Rohab\Rohab\obj\Debug\MusicAcademy.exe
+I:\Rohab\Rohab\obj\Debug\MusicAcademy.pdb
+I:\Rohab\Rohab\obj\Debug\Rohab.Properties.Resources.resources
+I:\Rohab\Rohab\obj\Debug\Rohab.frmPayments_PrintViewer.resources
+I:\Rohab\Rohab\obj\Debug\Rohab.frmHozoorByTeacherview.resources
+D:\Solutions\Rohab\Rohab\bin\Debug\MusicAcademy.exe.config
+D:\Solutions\Rohab\Rohab\obj\Debug\MusicAcademy.exe
+D:\Solutions\Rohab\Rohab\obj\Debug\MusicAcademy.pdb
+D:\Solutions\Rohab\Rohab\bin\Debug\MusicAcademy.exe
+D:\Solutions\Rohab\Rohab\bin\Debug\MusicAcademy.pdb
+D:\Solutions\Rohab\Rohab\obj\Debug\ResolveAssemblyReference.cache
+D:\Solutions\Rohab\Rohab\obj\Debug\Rohab.frmIncomePrintViewer.resources
+D:\Solutions\Rohab\Rohab\obj\Debug\Rohab.frmClassesPrintViewer.resources
+D:\Solutions\Rohab\Rohab\obj\Debug\Rohab.frmBackupView.resources
+D:\Solutions\Rohab\Rohab\obj\Debug\Rohab.frmHozoorPrintViewer.resources
+D:\Solutions\Rohab\Rohab\obj\Debug\Rohab.frmPayments_koliPrintViewer.resources
+D:\Solutions\Rohab\Rohab\obj\Debug\Rohab.addclass.resources
+D:\Solutions\Rohab\Rohab\obj\Debug\Rohab.CloseClass.resources
+D:\Solutions\Rohab\Rohab\obj\Debug\Rohab.editclass.resources
+D:\Solutions\Rohab\Rohab\obj\Debug\Rohab.classview.resources
+D:\Solutions\Rohab\Rohab\obj\Debug\Rohab.frmGhabz_koliPrintViewer.resources
+D:\Solutions\Rohab\Rohab\obj\Debug\Rohab.frmHozoorEdit.resources
+D:\Solutions\Rohab\Rohab\obj\Debug\Rohab.frmHozoorView.resources
+D:\Solutions\Rohab\Rohab\obj\Debug\Rohab.frmHozoor.resources
+D:\Solutions\Rohab\Rohab\obj\Debug\Rohab.frmGhabzPardakht.resources
+D:\Solutions\Rohab\Rohab\obj\Debug\Rohab.frmPaymentEslah.resources
+D:\Solutions\Rohab\Rohab\obj\Debug\Rohab.frmPaymentsView.resources
+D:\Solutions\Rohab\Rohab\obj\Debug\Rohab.addcourse.resources
+D:\Solutions\Rohab\Rohab\obj\Debug\Rohab.frmaddAmoozeshgah.resources
+D:\Solutions\Rohab\Rohab\obj\Debug\Rohab.fromMonthPayers.resources
+D:\Solutions\Rohab\Rohab\obj\Debug\Rohab.frmGhabzDaryaft.resources
+D:\Solutions\Rohab\Rohab\obj\Debug\Rohab.frmGhabzEslah.resources
+D:\Solutions\Rohab\Rohab\obj\Debug\Rohab.frmGhabzView.resources
+D:\Solutions\Rohab\Rohab\obj\Debug\Rohab.image.resources
+D:\Solutions\Rohab\Rohab\obj\Debug\Rohab.frmPayments_PrintViewer.resources
+D:\Solutions\Rohab\Rohab\obj\Debug\Rohab.frmStdPrintViewerIndivi.resources
+D:\Solutions\Rohab\Rohab\obj\Debug\Rohab.frmStdPrintViewer.resources
+D:\Solutions\Rohab\Rohab\obj\Debug\Rohab.addteacher.resources
+D:\Solutions\Rohab\Rohab\obj\Debug\Rohab.frmHozoorByTeacherview.resources
+D:\Solutions\Rohab\Rohab\obj\Debug\Rohab.frmTeacherPrintViewer.resources
+D:\Solutions\Rohab\Rohab\obj\Debug\Rohab.teacherview.resources
+D:\Solutions\Rohab\Rohab\obj\Debug\Rohab.editteacher.resources
+D:\Solutions\Rohab\Rohab\obj\Debug\Rohab.editstd.resources
+D:\Solutions\Rohab\Rohab\obj\Debug\Rohab.Form1.resources
+D:\Solutions\Rohab\Rohab\obj\Debug\Rohab.Properties.Resources.resources
+D:\Solutions\Rohab\Rohab\obj\Debug\Rohab.addstd.resources
+D:\Solutions\Rohab\Rohab\obj\Debug\Rohab.stdview.resources
+D:\Solutions\Rohab\Rohab\obj\Debug\Rohab.frmChpass.resources
+D:\Solutions\Rohab\Rohab\obj\Debug\Rohab.frmLogin.resources
+D:\Solutions\Rohab\Rohab\obj\Debug\Rohab.csproj.GenerateResource.Cache
+D:\Solutions\Rohab\Rohab\obj\Debug\RdlCompile.cache
+D:\Solutions\Rohab\Rohab\obj\Debug\RdlCompile.compiled
+D:\Solutions\Rohab\Rohab\obj\Debug\Rohab.frmHazinehPeygiriPrintViewer.resources
+E:\Solutions\Rohab\Rohab\bin\Debug\MusicAcademy.exe.config
+E:\Solutions\Rohab\Rohab\obj\Debug\MusicAcademy.exe
+E:\Solutions\Rohab\Rohab\obj\Debug\MusicAcademy.pdb
+E:\Solutions\Rohab\Rohab\bin\Debug\MusicAcademy.exe
+E:\Solutions\Rohab\Rohab\bin\Debug\MusicAcademy.pdb
+E:\Solutions\Rohab\Rohab\obj\Debug\ResolveAssemblyReference.cache
+E:\Solutions\Rohab\Rohab\obj\Debug\Rohab.frmIncomePrintViewer.resources
+E:\Solutions\Rohab\Rohab\obj\Debug\Rohab.frmClassesPrintViewer.resources
+E:\Solutions\Rohab\Rohab\obj\Debug\Rohab.frmBackupView.resources
+E:\Solutions\Rohab\Rohab\obj\Debug\Rohab.frmHazinehPeygiriPrintViewer.resources
+E:\Solutions\Rohab\Rohab\obj\Debug\Rohab.frmHozoorPrintViewer.resources
+E:\Solutions\Rohab\Rohab\obj\Debug\Rohab.frmPayments_koliPrintViewer.resources
+E:\Solutions\Rohab\Rohab\obj\Debug\Rohab.addclass.resources
+E:\Solutions\Rohab\Rohab\obj\Debug\Rohab.CloseClass.resources
+E:\Solutions\Rohab\Rohab\obj\Debug\Rohab.editclass.resources
+E:\Solutions\Rohab\Rohab\obj\Debug\Rohab.classview.resources
+E:\Solutions\Rohab\Rohab\obj\Debug\Rohab.frmGhabz_koliPrintViewer.resources
+E:\Solutions\Rohab\Rohab\obj\Debug\Rohab.frmHozoorEdit.resources
+E:\Solutions\Rohab\Rohab\obj\Debug\Rohab.frmHozoorView.resources
+E:\Solutions\Rohab\Rohab\obj\Debug\Rohab.frmHozoor.resources
+E:\Solutions\Rohab\Rohab\obj\Debug\Rohab.frmGhabzPardakht.resources
+E:\Solutions\Rohab\Rohab\obj\Debug\Rohab.frmPaymentEslah.resources
+E:\Solutions\Rohab\Rohab\obj\Debug\Rohab.frmPaymentsView.resources
+E:\Solutions\Rohab\Rohab\obj\Debug\Rohab.addcourse.resources
+E:\Solutions\Rohab\Rohab\obj\Debug\Rohab.frmaddAmoozeshgah.resources
+E:\Solutions\Rohab\Rohab\obj\Debug\Rohab.fromMonthPayers.resources
+E:\Solutions\Rohab\Rohab\obj\Debug\Rohab.frmGhabzDaryaft.resources
+E:\Solutions\Rohab\Rohab\obj\Debug\Rohab.frmGhabzEslah.resources
+E:\Solutions\Rohab\Rohab\obj\Debug\Rohab.frmGhabzView.resources
+E:\Solutions\Rohab\Rohab\obj\Debug\Rohab.image.resources
+E:\Solutions\Rohab\Rohab\obj\Debug\Rohab.frmPayments_PrintViewer.resources
+E:\Solutions\Rohab\Rohab\obj\Debug\Rohab.frmStdPrintViewerIndivi.resources
+E:\Solutions\Rohab\Rohab\obj\Debug\Rohab.frmStdPrintViewer.resources
+E:\Solutions\Rohab\Rohab\obj\Debug\Rohab.addteacher.resources
+E:\Solutions\Rohab\Rohab\obj\Debug\Rohab.frmHozoorByTeacherview.resources
+E:\Solutions\Rohab\Rohab\obj\Debug\Rohab.frmTeacherPrintViewer.resources
+E:\Solutions\Rohab\Rohab\obj\Debug\Rohab.teacherview.resources
+E:\Solutions\Rohab\Rohab\obj\Debug\Rohab.editteacher.resources
+E:\Solutions\Rohab\Rohab\obj\Debug\Rohab.editstd.resources
+E:\Solutions\Rohab\Rohab\obj\Debug\Rohab.Form1.resources
+E:\Solutions\Rohab\Rohab\obj\Debug\Rohab.Properties.Resources.resources
+E:\Solutions\Rohab\Rohab\obj\Debug\Rohab.addstd.resources
+E:\Solutions\Rohab\Rohab\obj\Debug\Rohab.stdview.resources
+E:\Solutions\Rohab\Rohab\obj\Debug\Rohab.frmChpass.resources
+E:\Solutions\Rohab\Rohab\obj\Debug\Rohab.frmLogin.resources
+E:\Solutions\Rohab\Rohab\obj\Debug\Rohab.csproj.GenerateResource.Cache
+E:\Solutions\Rohab\Rohab\obj\Debug\RdlCompile.cache
+E:\Solutions\Rohab\Rohab\obj\Debug\RdlCompile.compiled
+E:\Solutions\Rohab\Rohab\obj\Debug\Rohab.Presentation_Layers.frmHazinehEdit.resources
+E:\Solutions\Rohab\Rohab\obj\Debug\Rohab.Presentation_Layers.frmHazinehInp.resources
+E:\Solutions\Rohab\Rohab\obj\Debug\Rohab.Presentation_Layers.frmHazinehPrintViewer.resources
+E:\Solutions\Rohab\Rohab\obj\Debug\Rohab.Presentation_Layers.frmHazinehShow.resources
+E:\Solutions\Rohab\Rohab\obj\Debug\Rohab.Presentation_Layers.frmHazinehView.resources
+E:\Solutions\Rohab\Rohab\obj\Debug\Rohab.Presentation_Layers.frmShortHazinehInp.resources
+E:\Solutions\Rohab - new\Rohab\bin\Debug\MusicAcademy.exe.config
+E:\Solutions\Rohab - new\Rohab\obj\Debug\MusicAcademy.exe
+E:\Solutions\Rohab - new\Rohab\obj\Debug\MusicAcademy.pdb
+E:\Solutions\Rohab - new\Rohab\bin\Debug\MusicAcademy.exe
+E:\Solutions\Rohab - new\Rohab\bin\Debug\MusicAcademy.pdb
+E:\Solutions\Rohab - new\Rohab\obj\Debug\ResolveAssemblyReference.cache
+E:\Solutions\Rohab - new\Rohab\obj\Debug\Rohab.frmIncomePrintViewer.resources
+E:\Solutions\Rohab - new\Rohab\obj\Debug\Rohab.frmClassesPrintViewer.resources
+E:\Solutions\Rohab - new\Rohab\obj\Debug\Rohab.frmBackupView.resources
+E:\Solutions\Rohab - new\Rohab\obj\Debug\Rohab.frmHazinehPeygiriPrintViewer.resources
+E:\Solutions\Rohab - new\Rohab\obj\Debug\Rohab.Presentation_Layers.frmHazinehEdit.resources
+E:\Solutions\Rohab - new\Rohab\obj\Debug\Rohab.Presentation_Layers.frmHazinehInp.resources
+E:\Solutions\Rohab - new\Rohab\obj\Debug\Rohab.Presentation_Layers.frmHazinehPrintViewer.resources
+E:\Solutions\Rohab - new\Rohab\obj\Debug\Rohab.Presentation_Layers.frmHazinehShow.resources
+E:\Solutions\Rohab - new\Rohab\obj\Debug\Rohab.Presentation_Layers.frmHazinehView.resources
+E:\Solutions\Rohab - new\Rohab\obj\Debug\Rohab.Presentation_Layers.frmShortHazinehInp.resources
+E:\Solutions\Rohab - new\Rohab\obj\Debug\Rohab.frmHozoorPrintViewer.resources
+E:\Solutions\Rohab - new\Rohab\obj\Debug\Rohab.frmPayments_koliPrintViewer.resources
+E:\Solutions\Rohab - new\Rohab\obj\Debug\Rohab.addclass.resources
+E:\Solutions\Rohab - new\Rohab\obj\Debug\Rohab.CloseClass.resources
+E:\Solutions\Rohab - new\Rohab\obj\Debug\Rohab.editclass.resources
+E:\Solutions\Rohab - new\Rohab\obj\Debug\Rohab.classview.resources
+E:\Solutions\Rohab - new\Rohab\obj\Debug\Rohab.frmGhabz_koliPrintViewer.resources
+E:\Solutions\Rohab - new\Rohab\obj\Debug\Rohab.frmHozoorEdit.resources
+E:\Solutions\Rohab - new\Rohab\obj\Debug\Rohab.frmHozoorView.resources
+E:\Solutions\Rohab - new\Rohab\obj\Debug\Rohab.frmHozoor.resources
+E:\Solutions\Rohab - new\Rohab\obj\Debug\Rohab.frmGhabzPardakht.resources
+E:\Solutions\Rohab - new\Rohab\obj\Debug\Rohab.frmPaymentEslah.resources
+E:\Solutions\Rohab - new\Rohab\obj\Debug\Rohab.frmPaymentsView.resources
+E:\Solutions\Rohab - new\Rohab\obj\Debug\Rohab.addcourse.resources
+E:\Solutions\Rohab - new\Rohab\obj\Debug\Rohab.frmaddAmoozeshgah.resources
+E:\Solutions\Rohab - new\Rohab\obj\Debug\Rohab.fromMonthPayers.resources
+E:\Solutions\Rohab - new\Rohab\obj\Debug\Rohab.frmGhabzDaryaft.resources
+E:\Solutions\Rohab - new\Rohab\obj\Debug\Rohab.frmGhabzEslah.resources
+E:\Solutions\Rohab - new\Rohab\obj\Debug\Rohab.frmGhabzView.resources
+E:\Solutions\Rohab - new\Rohab\obj\Debug\Rohab.image.resources
+E:\Solutions\Rohab - new\Rohab\obj\Debug\Rohab.frmPayments_PrintViewer.resources
+E:\Solutions\Rohab - new\Rohab\obj\Debug\Rohab.frmStdPrintViewerIndivi.resources
+E:\Solutions\Rohab - new\Rohab\obj\Debug\Rohab.frmStdPrintViewer.resources
+E:\Solutions\Rohab - new\Rohab\obj\Debug\Rohab.addteacher.resources
+E:\Solutions\Rohab - new\Rohab\obj\Debug\Rohab.frmHozoorByTeacherview.resources
+E:\Solutions\Rohab - new\Rohab\obj\Debug\Rohab.frmTeacherPrintViewer.resources
+E:\Solutions\Rohab - new\Rohab\obj\Debug\Rohab.teacherview.resources
+E:\Solutions\Rohab - new\Rohab\obj\Debug\Rohab.editteacher.resources
+E:\Solutions\Rohab - new\Rohab\obj\Debug\Rohab.editstd.resources
+E:\Solutions\Rohab - new\Rohab\obj\Debug\Rohab.Form1.resources
+E:\Solutions\Rohab - new\Rohab\obj\Debug\Rohab.Properties.Resources.resources
+E:\Solutions\Rohab - new\Rohab\obj\Debug\Rohab.addstd.resources
+E:\Solutions\Rohab - new\Rohab\obj\Debug\Rohab.stdview.resources
+E:\Solutions\Rohab - new\Rohab\obj\Debug\Rohab.frmChpass.resources
+E:\Solutions\Rohab - new\Rohab\obj\Debug\Rohab.frmLogin.resources
+E:\Solutions\Rohab - new\Rohab\obj\Debug\Rohab.csproj.GenerateResource.Cache
+E:\Solutions\Rohab - new\Rohab\obj\Debug\RdlCompile.cache
+E:\Solutions\Rohab - new\Rohab\obj\Debug\RdlCompile.compiled
+E:\Solutions\Rohab-new\Rohab\bin\Debug\MusicAcademy.exe.config
+E:\Solutions\Rohab-new\Rohab\bin\Debug\MusicAcademy.exe
+E:\Solutions\Rohab-new\Rohab\bin\Debug\MusicAcademy.pdb
+E:\Solutions\Rohab-new\Rohab\obj\Debug\ResolveAssemblyReference.cache
+E:\Solutions\Rohab-new\Rohab\obj\Debug\MyControls.FiveCharTextBox.resources
+E:\Solutions\Rohab-new\Rohab\obj\Debug\Rohab.frmIncomePrintViewer.resources
+E:\Solutions\Rohab-new\Rohab\obj\Debug\Rohab.frmClassesPrintViewer.resources
+E:\Solutions\Rohab-new\Rohab\obj\Debug\Rohab.frmBackupView.resources
+E:\Solutions\Rohab-new\Rohab\obj\Debug\Rohab.frmCalender.resources
+E:\Solutions\Rohab-new\Rohab\obj\Debug\Rohab.frmGhabzDaryaftIndividual.resources
+E:\Solutions\Rohab-new\Rohab\obj\Debug\Rohab.frmGhabzEdit.resources
+E:\Solutions\Rohab-new\Rohab\obj\Debug\Rohab.frmHazinehPeygiriPrintViewer.resources
+E:\Solutions\Rohab-new\Rohab\obj\Debug\Rohab.Presentation_Layers.frmHazinehEdit.resources
+E:\Solutions\Rohab-new\Rohab\obj\Debug\Rohab.Presentation_Layers.frmHazinehInp.resources
+E:\Solutions\Rohab-new\Rohab\obj\Debug\Rohab.Presentation_Layers.frmHazinehPrintViewer.resources
+E:\Solutions\Rohab-new\Rohab\obj\Debug\Rohab.Presentation_Layers.frmHazinehShow.resources
+E:\Solutions\Rohab-new\Rohab\obj\Debug\Rohab.Presentation_Layers.frmHazinehView.resources
+E:\Solutions\Rohab-new\Rohab\obj\Debug\Rohab.Presentation_Layers.frmShortHazinehInp.resources
+E:\Solutions\Rohab-new\Rohab\obj\Debug\Rohab.frmHozoorPrintViewer.resources
+E:\Solutions\Rohab-new\Rohab\obj\Debug\Rohab.frmHozoorInp.resources
+E:\Solutions\Rohab-new\Rohab\obj\Debug\Rohab.frmPayments_koliPrintViewer.resources
+E:\Solutions\Rohab-new\Rohab\obj\Debug\Rohab.addclass.resources
+E:\Solutions\Rohab-new\Rohab\obj\Debug\Rohab.CloseClass.resources
+E:\Solutions\Rohab-new\Rohab\obj\Debug\Rohab.editclass.resources
+E:\Solutions\Rohab-new\Rohab\obj\Debug\Rohab.classview.resources
+E:\Solutions\Rohab-new\Rohab\obj\Debug\Rohab.frmGhabz_koliPrintViewer.resources
+E:\Solutions\Rohab-new\Rohab\obj\Debug\Rohab.frmHozoorEdit.resources
+E:\Solutions\Rohab-new\Rohab\obj\Debug\Rohab.frmHozoorView.resources
+E:\Solutions\Rohab-new\Rohab\obj\Debug\Rohab.frmGhabzPardakht.resources
+E:\Solutions\Rohab-new\Rohab\obj\Debug\Rohab.frmPaymentEslah.resources
+E:\Solutions\Rohab-new\Rohab\obj\Debug\Rohab.frmPaymentsView.resources
+E:\Solutions\Rohab-new\Rohab\obj\Debug\Rohab.addcourse.resources
+E:\Solutions\Rohab-new\Rohab\obj\Debug\Rohab.frmaddAmoozeshgah.resources
+E:\Solutions\Rohab-new\Rohab\obj\Debug\Rohab.fromMonthPayers.resources
+E:\Solutions\Rohab-new\Rohab\obj\Debug\Rohab.frmGhabzDaryaft.resources
+E:\Solutions\Rohab-new\Rohab\obj\Debug\Rohab.frmGhabzView.resources
+E:\Solutions\Rohab-new\Rohab\obj\Debug\Rohab.image.resources
+E:\Solutions\Rohab-new\Rohab\obj\Debug\Rohab.frmPayments_PrintViewer.resources
+E:\Solutions\Rohab-new\Rohab\obj\Debug\Rohab.addeditcontact.resources
+E:\Solutions\Rohab-new\Rohab\obj\Debug\Rohab.frmersalbehonarju.resources
+E:\Solutions\Rohab-new\Rohab\obj\Debug\Rohab.frmersalbeostad.resources
+E:\Solutions\Rohab-new\Rohab\obj\Debug\Rohab.frmersalbesayer.resources
+E:\Solutions\Rohab-new\Rohab\obj\Debug\Rohab.frminboxsmslist.resources
+E:\Solutions\Rohab-new\Rohab\obj\Debug\Rohab.frmoutboxsmslist.resources
+E:\Solutions\Rohab-new\Rohab\obj\Debug\Rohab.frmtabrik.resources
+E:\Solutions\Rohab-new\Rohab\obj\Debug\Rohab.sendingLog.resources
+E:\Solutions\Rohab-new\Rohab\obj\Debug\Rohab.smsScreen.resources
+E:\Solutions\Rohab-new\Rohab\obj\Debug\Rohab.sqlpanel.resources
+E:\Solutions\Rohab-new\Rohab\obj\Debug\Rohab.frmAllInfo.resources
+E:\Solutions\Rohab-new\Rohab\obj\Debug\Rohab.frmStdPrintViewerIndivi.resources
+E:\Solutions\Rohab-new\Rohab\obj\Debug\Rohab.frmStdPrintViewer.resources
+E:\Solutions\Rohab-new\Rohab\obj\Debug\Rohab.frmStdHisPrintViewer.resources
+E:\Solutions\Rohab-new\Rohab\obj\Debug\Rohab.frmStdHisView.resources
+E:\Solutions\Rohab-new\Rohab\obj\Debug\Rohab.frmStdMandehEdit.resources
+E:\Solutions\Rohab-new\Rohab\obj\Debug\Rohab.addteacher.resources
+E:\Solutions\Rohab-new\Rohab\obj\Debug\Rohab.frmHozoorByTeacherview.resources
+E:\Solutions\Rohab-new\Rohab\obj\Debug\Rohab.frmTeacherPrintViewer.resources
+E:\Solutions\Rohab-new\Rohab\obj\Debug\Rohab.teacherview.resources
+E:\Solutions\Rohab-new\Rohab\obj\Debug\Rohab.editteacher.resources
+E:\Solutions\Rohab-new\Rohab\obj\Debug\Rohab.editstd.resources
+E:\Solutions\Rohab-new\Rohab\obj\Debug\Rohab.frmMain.resources
+E:\Solutions\Rohab-new\Rohab\obj\Debug\Rohab.Properties.Resources.resources
+E:\Solutions\Rohab-new\Rohab\obj\Debug\Rohab.addstd.resources
+E:\Solutions\Rohab-new\Rohab\obj\Debug\Rohab.stdview.resources
+E:\Solutions\Rohab-new\Rohab\obj\Debug\Rohab.frmChpass.resources
+E:\Solutions\Rohab-new\Rohab\obj\Debug\Rohab.frmLogin.resources
+E:\Solutions\Rohab-new\Rohab\obj\Debug\Rohab.csproj.GenerateResource.Cache
+E:\Solutions\Rohab-new\Rohab\obj\Debug\RdlCompile.cache
+E:\Solutions\Rohab-new\Rohab\obj\Debug\RdlCompile.compiled
+E:\Solutions\Rohab-new\Rohab\obj\Debug\MusicAcademy.exe
+E:\Solutions\Rohab-new\Rohab\obj\Debug\MusicAcademy.pdb

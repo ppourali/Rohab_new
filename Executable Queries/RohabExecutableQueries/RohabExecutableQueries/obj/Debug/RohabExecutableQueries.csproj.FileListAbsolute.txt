@@ -1,0 +1,8 @@
+E:\Solutions\Rohab-new\Executable Queries\RohabExecutableQueries\RohabExecutableQueries\obj\Debug\ResolveAssemblyReference.cache
+E:\Solutions\Rohab-new\Executable Queries\RohabExecutableQueries\RohabExecutableQueries\obj\Debug\RohabExecutableQueries.Form1.resources
+E:\Solutions\Rohab-new\Executable Queries\RohabExecutableQueries\RohabExecutableQueries\obj\Debug\RohabExecutableQueries.Properties.Resources.resources
+E:\Solutions\Rohab-new\Executable Queries\RohabExecutableQueries\RohabExecutableQueries\obj\Debug\RohabExecutableQueries.csproj.GenerateResource.Cache
+E:\Solutions\Rohab-new\Executable Queries\RohabExecutableQueries\RohabExecutableQueries\bin\Debug\RohabExecutableQueries.exe
+E:\Solutions\Rohab-new\Executable Queries\RohabExecutableQueries\RohabExecutableQueries\bin\Debug\RohabExecutableQueries.pdb
+E:\Solutions\Rohab-new\Executable Queries\RohabExecutableQueries\RohabExecutableQueries\obj\Debug\RohabExecutableQueries.exe
+E:\Solutions\Rohab-new\Executable Queries\RohabExecutableQueries\RohabExecutableQueries\obj\Debug\RohabExecutableQueries.pdb

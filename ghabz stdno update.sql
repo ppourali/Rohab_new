@@ -1,0 +1,1 @@
+update ghabz set stdno=std.stdno FROM ghabz,std where (ghabz.name = std.name)

@@ -1,0 +1,912 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSources>
+    <DataSource Name="RohabConnectionString1">
+      <rd:DataSourceID>26626f35-3403-4b9f-8486-c369076f9035</rd:DataSourceID>
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString>Data Source=.\sqlexpress;Initial Catalog=Rohab;Integrated Security=True</ConnectString>
+      </ConnectionProperties>
+    </DataSource>
+    <DataSource Name="M_A_DBConnectionString">
+      <rd:DataSourceID>76b8bcf8-a04c-41f1-b96b-269056e22d42</rd:DataSourceID>
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString>Data Source=PARSA-PC\SQLEXPRESS;Initial Catalog=M_A_DB;Integrated Security=True</ConnectString>
+      </ConnectionProperties>
+    </DataSource>
+  </DataSources>
+  <InteractiveHeight>11in</InteractiveHeight>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <InteractiveWidth>8.5in</InteractiveWidth>
+  <rd:GridSpacing>0.25cm</rd:GridSpacing>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <RightMargin>1cm</RightMargin>
+  <LeftMargin>1cm</LeftMargin>
+  <BottomMargin>1cm</BottomMargin>
+  <rd:ReportID>d407d9c7-3a97-42d4-ba77-c1f63a0821cb</rd:ReportID>
+  <PageWidth>21cm</PageWidth>
+  <DataSets>
+    <DataSet Name="RohabDataSet_Payments">
+      <Fields>
+        <Field Name="id">
+          <DataField>id</DataField>
+          <rd:TypeName>System.Int64</rd:TypeName>
+        </Field>
+        <Field Name="name">
+          <DataField>name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="date">
+          <DataField>date</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="mablagh">
+          <DataField>mablagh</DataField>
+          <rd:TypeName>System.Int64</rd:TypeName>
+        </Field>
+        <Field Name="sharh">
+          <DataField>sharh</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="paidformonth">
+          <DataField>paidformonth</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>M_A_DBConnectionString</DataSourceName>
+        <CommandText>SELECT * FROM dbo.Payments</CommandText>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <rd:DataSetInfo>
+        <rd:DataSetName>RohabDataSet</rd:DataSetName>
+        <rd:TableName>Payments</rd:TableName>
+        <rd:TableAdapterName>PaymentsTableAdapter</rd:TableAdapterName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+      </rd:DataSetInfo>
+    </DataSet>
+    <DataSet Name="RohabDataSet_amoozeshgah">
+      <Fields>
+        <Field Name="name">
+          <DataField>name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="tel">
+          <DataField>tel</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="address">
+          <DataField>address</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="photo">
+          <DataField>photo</DataField>
+          <rd:TypeName>System.Byte[]</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>M_A_DBConnectionString</DataSourceName>
+        <CommandText>SELECT * FROM dbo.amoozeshgah</CommandText>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <rd:DataSetInfo>
+        <rd:DataSetName>RohabDataSet</rd:DataSetName>
+        <rd:TableName>amoozeshgah</rd:TableName>
+        <rd:TableAdapterName>amoozeshgahTableAdapter</rd:TableAdapterName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <Width>19cm</Width>
+  <Body>
+    <ColumnSpacing>1cm</ColumnSpacing>
+    <ReportItems>
+      <List Name="list2">
+        <ZIndex>1</ZIndex>
+        <Left>0.5cm</Left>
+        <DataSetName>RohabDataSet_Payments</DataSetName>
+        <ReportItems>
+          <Textbox Name="textbox6">
+            <Top>10.25cm</Top>
+            <Width>16.25cm</Width>
+            <Style>
+              <BorderColor>
+                <Default>LightGrey</Default>
+              </BorderColor>
+              <FontFamily>B Lotus</FontFamily>
+              <FontSize>12pt</FontSize>
+              <FontWeight>700</FontWeight>
+              <TextAlign>Left</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+              <Direction>RTL</Direction>
+              <Language>fa</Language>
+              <Calendar>Hijri</Calendar>
+              <NumeralLanguage>fa</NumeralLanguage>
+            </Style>
+            <ZIndex>10</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.75cm</Left>
+            <Height>0.75cm</Height>
+            <Value>="توضیحات: "+Fields!sharh.Value</Value>
+          </Textbox>
+          <Line Name="line2">
+            <Top>5.02031in</Top>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+            </Style>
+            <ZIndex>9</ZIndex>
+          </Line>
+          <Textbox Name="textbox7">
+            <Top>11.25cm</Top>
+            <Width>3cm</Width>
+            <Style>
+              <BorderColor>
+                <Default>LightGrey</Default>
+              </BorderColor>
+              <FontFamily>B Lotus</FontFamily>
+              <FontSize>11pt</FontSize>
+              <FontWeight>700</FontWeight>
+              <TextAlign>Right</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+              <Direction>RTL</Direction>
+              <Language>fa</Language>
+              <Calendar>Hijri</Calendar>
+              <NumeralLanguage>fa</NumeralLanguage>
+            </Style>
+            <ZIndex>8</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>12cm</Left>
+            <Height>0.75cm</Height>
+            <Value>مهر آموزشگاه</Value>
+          </Textbox>
+          <Textbox Name="textbox10">
+            <Top>5.00001cm</Top>
+            <Width>8.5cm</Width>
+            <Style>
+              <BorderColor>
+                <Default>LightGrey</Default>
+              </BorderColor>
+              <FontFamily>B Lotus</FontFamily>
+              <FontSize>15pt</FontSize>
+              <FontWeight>700</FontWeight>
+              <TextAlign>Center</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+              <Direction>RTL</Direction>
+              <Language>fa</Language>
+              <Calendar>Hijri</Calendar>
+              <NumeralLanguage>fa</NumeralLanguage>
+            </Style>
+            <ZIndex>7</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>5.25cm</Left>
+            <Height>0.75cm</Height>
+            <Value>="رسید پرداخت وجه به اساتید"</Value>
+          </Textbox>
+          <Textbox Name="textbox11">
+            <Top>11.25cm</Top>
+            <Width>3cm</Width>
+            <Style>
+              <BorderColor>
+                <Default>LightGrey</Default>
+              </BorderColor>
+              <FontFamily>B Lotus</FontFamily>
+              <FontSize>11pt</FontSize>
+              <FontWeight>700</FontWeight>
+              <TextAlign>Right</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+              <Direction>RTL</Direction>
+              <Language>fa</Language>
+              <Calendar>Hijri</Calendar>
+              <NumeralLanguage>fa</NumeralLanguage>
+            </Style>
+            <ZIndex>6</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>1.75cm</Left>
+            <Height>0.75cm</Height>
+            <Value>امضا گیرنده</Value>
+          </Textbox>
+          <Textbox Name="textbox12">
+            <Top>6.75cm</Top>
+            <Width>16.25cm</Width>
+            <Style>
+              <BorderColor>
+                <Default>LightGrey</Default>
+              </BorderColor>
+              <FontFamily>B Lotus</FontFamily>
+              <FontSize>13pt</FontSize>
+              <FontWeight>700</FontWeight>
+              <TextAlign>Left</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+              <Direction>RTL</Direction>
+              <Language>fa</Language>
+              <Calendar>Hijri</Calendar>
+              <NumeralLanguage>fa</NumeralLanguage>
+            </Style>
+            <ZIndex>5</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.75cm</Left>
+            <Height>3.25001cm</Height>
+            <Value>=" مبلغ "+FormatNumber(Fields!mablagh.Value,0)+" تومان به اینجانب، "+Fields!name.Value.ToString()+" از طرف آموزشگاه موسیقی "+Fields!name.Value.ToString()+" بابت حقوق "+Fields!paidformonth.Value.ToString()+" ماه پرداخت گردیده است. "</Value>
+          </Textbox>
+          <Textbox Name="textbox13">
+            <Top>5.50001cm</Top>
+            <Width>2.5cm</Width>
+            <Style>
+              <BorderColor>
+                <Default>LightGrey</Default>
+              </BorderColor>
+              <BorderStyle>
+                <Bottom>Dotted</Bottom>
+              </BorderStyle>
+              <FontFamily>B Lotus</FontFamily>
+              <FontSize>11pt</FontSize>
+              <FontWeight>700</FontWeight>
+              <TextAlign>Left</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+              <Direction>RTL</Direction>
+              <Language>fa</Language>
+              <Calendar>Hijri</Calendar>
+              <NumeralLanguage>fa</NumeralLanguage>
+            </Style>
+            <ZIndex>4</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.77539cm</Height>
+            <Value>=Fields!date.Value</Value>
+          </Textbox>
+          <Textbox Name="textbox14">
+            <Top>5.50001cm</Top>
+            <Width>1.99206cm</Width>
+            <Style>
+              <BorderColor>
+                <Default>LightGrey</Default>
+              </BorderColor>
+              <FontFamily>B Lotus</FontFamily>
+              <FontSize>11pt</FontSize>
+              <FontWeight>700</FontWeight>
+              <TextAlign>Center</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+              <Direction>RTL</Direction>
+              <Language>fa</Language>
+              <Calendar>Hijri</Calendar>
+              <NumeralLanguage>fa</NumeralLanguage>
+            </Style>
+            <ZIndex>3</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>2.75397cm</Left>
+            <Height>0.75cm</Height>
+            <Value>تاریخ صدور:</Value>
+          </Textbox>
+          <Textbox Name="textbox17">
+            <Top>4.75001cm</Top>
+            <Width>2.49206cm</Width>
+            <Style>
+              <BorderColor>
+                <Default>LightGrey</Default>
+              </BorderColor>
+              <BorderStyle>
+                <Bottom>Dotted</Bottom>
+              </BorderStyle>
+              <FontFamily>B Lotus</FontFamily>
+              <FontSize>11pt</FontSize>
+              <FontWeight>700</FontWeight>
+              <TextAlign>Left</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+              <Direction>RTL</Direction>
+              <Language>fa</Language>
+              <Calendar>Hijri</Calendar>
+              <NumeralLanguage>fa</NumeralLanguage>
+            </Style>
+            <ZIndex>2</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.77539cm</Height>
+            <Value>=Fields!id.Value</Value>
+          </Textbox>
+          <Textbox Name="textbox18">
+            <Top>4.75001cm</Top>
+            <Width>1.99206cm</Width>
+            <Style>
+              <BorderColor>
+                <Default>LightGrey</Default>
+              </BorderColor>
+              <FontFamily>B Lotus</FontFamily>
+              <FontSize>11pt</FontSize>
+              <FontWeight>700</FontWeight>
+              <TextAlign>Center</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+              <Direction>RTL</Direction>
+              <Language>fa</Language>
+              <Calendar>Hijri</Calendar>
+              <NumeralLanguage>fa</NumeralLanguage>
+            </Style>
+            <ZIndex>1</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>2.74999cm</Left>
+            <Height>0.75cm</Height>
+            <Value>شماره قبض</Value>
+          </Textbox>
+          <Table Name="table2">
+            <DataSetName>RohabDataSet_amoozeshgah</DataSetName>
+            <Top>0.25cm</Top>
+            <Width>17.25cm</Width>
+            <Style>
+              <BorderStyle>
+                <Default>Double</Default>
+              </BorderStyle>
+              <BorderWidth>
+                <Default>2pt</Default>
+              </BorderWidth>
+              <FontFamily>b zar</FontFamily>
+              <Direction>RTL</Direction>
+              <Language>fa-IR</Language>
+              <NumeralLanguage>fa-IR</NumeralLanguage>
+            </Style>
+            <Header>
+              <TableRows>
+                <TableRow>
+                  <TableCells>
+                    <TableCell>
+                      <ReportItems>
+                        <Image Name="image2">
+                          <Sizing>Fit</Sizing>
+                          <MIMEType>image/jpeg</MIMEType>
+                          <Source>Database</Source>
+                          <Style />
+                          <ZIndex>4</ZIndex>
+                          <Value>=First(Fields!photo.Value, "RohabDataSet_amoozeshgah")</Value>
+                        </Image>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox19">
+                          <Style>
+                            <Color>SteelBlue</Color>
+                            <FontFamily>B lotus</FontFamily>
+                            <FontSize>20pt</FontSize>
+                            <FontWeight>700</FontWeight>
+                            <TextAlign>Center</TextAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                          <ZIndex>3</ZIndex>
+                          <CanGrow>true</CanGrow>
+                          <Value>=" آموزشگاه موسیقی " +First(Fields!name.Value, "RohabDataSet_amoozeshgah")</Value>
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox20">
+                          <Style>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                          <ZIndex>2</ZIndex>
+                          <CanGrow>true</CanGrow>
+                          <Value />
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                  </TableCells>
+                  <Height>2.75cm</Height>
+                </TableRow>
+              </TableRows>
+            </Header>
+            <TableColumns>
+              <TableColumn>
+                <Width>4.75cm</Width>
+              </TableColumn>
+              <TableColumn>
+                <Width>8.75cm</Width>
+              </TableColumn>
+              <TableColumn>
+                <Width>3.75cm</Width>
+              </TableColumn>
+            </TableColumns>
+            <Height>3.43783cm</Height>
+            <Footer>
+              <TableRows>
+                <TableRow>
+                  <TableCells>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox21">
+                          <Style>
+                            <FontFamily>b lotus</FontFamily>
+                            <TextAlign>Right</TextAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                          <ZIndex>1</ZIndex>
+                          <CanGrow>true</CanGrow>
+                          <Value>=First(Fields!tel.Value, "RohabDataSet_amoozeshgah")+" : تلفن"</Value>
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ColSpan>2</ColSpan>
+                      <ReportItems>
+                        <Textbox Name="textbox22">
+                          <Style>
+                            <FontFamily>b lotus</FontFamily>
+                            <TextAlign>Right</TextAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                          <CanGrow>true</CanGrow>
+                          <Value>="آدرس : "+ First(Fields!address.Value, "RohabDataSet_amoozeshgah")</Value>
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                  </TableCells>
+                  <Height>0.68783cm</Height>
+                </TableRow>
+              </TableRows>
+            </Footer>
+            <Left>0.25cm</Left>
+          </Table>
+        </ReportItems>
+        <Top>5.5125in</Top>
+        <Width>17.75cm</Width>
+        <Style>
+          <BorderStyle>
+            <Default>Solid</Default>
+          </BorderStyle>
+          <Direction>RTL</Direction>
+        </Style>
+        <Grouping Name="list2_ListControl">
+          <GroupExpressions>
+            <GroupExpression>=Fields!id.Value</GroupExpression>
+          </GroupExpressions>
+        </Grouping>
+      </List>
+      <List Name="list1">
+        <Left>0.5cm</Left>
+        <DataSetName>RohabDataSet_Payments</DataSetName>
+        <ReportItems>
+          <Textbox Name="textbox4">
+            <Top>10.25cm</Top>
+            <Width>16.25cm</Width>
+            <Style>
+              <BorderColor>
+                <Default>LightGrey</Default>
+              </BorderColor>
+              <FontFamily>B Lotus</FontFamily>
+              <FontSize>12pt</FontSize>
+              <FontWeight>700</FontWeight>
+              <TextAlign>Left</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+              <Direction>RTL</Direction>
+              <Language>fa</Language>
+              <Calendar>Hijri</Calendar>
+              <NumeralLanguage>fa</NumeralLanguage>
+            </Style>
+            <ZIndex>10</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.75cm</Left>
+            <Height>0.75cm</Height>
+            <Value>="توضیحات: "+Fields!sharh.Value</Value>
+          </Textbox>
+          <Line Name="line1">
+            <Top>5.02031in</Top>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+            </Style>
+            <ZIndex>9</ZIndex>
+          </Line>
+          <Textbox Name="textbox2">
+            <Top>11.25cm</Top>
+            <Width>3cm</Width>
+            <Style>
+              <BorderColor>
+                <Default>LightGrey</Default>
+              </BorderColor>
+              <FontFamily>B Lotus</FontFamily>
+              <FontSize>11pt</FontSize>
+              <FontWeight>700</FontWeight>
+              <TextAlign>Right</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+              <Direction>RTL</Direction>
+              <Language>fa</Language>
+              <Calendar>Hijri</Calendar>
+              <NumeralLanguage>fa</NumeralLanguage>
+            </Style>
+            <ZIndex>8</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>12cm</Left>
+            <Height>0.75cm</Height>
+            <Value>مهر آموزشگاه</Value>
+          </Textbox>
+          <Textbox Name="textbox16">
+            <Top>5.00001cm</Top>
+            <Width>8.5cm</Width>
+            <Style>
+              <BorderColor>
+                <Default>LightGrey</Default>
+              </BorderColor>
+              <FontFamily>B Lotus</FontFamily>
+              <FontSize>15pt</FontSize>
+              <FontWeight>700</FontWeight>
+              <TextAlign>Center</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+              <Direction>RTL</Direction>
+              <Language>fa</Language>
+              <Calendar>Hijri</Calendar>
+              <NumeralLanguage>fa</NumeralLanguage>
+            </Style>
+            <ZIndex>7</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>5.25cm</Left>
+            <Height>0.75cm</Height>
+            <Value>="رسید پرداخت وجه به اساتید"</Value>
+          </Textbox>
+          <Textbox Name="textbox15">
+            <Top>11.25cm</Top>
+            <Width>3cm</Width>
+            <Style>
+              <BorderColor>
+                <Default>LightGrey</Default>
+              </BorderColor>
+              <FontFamily>B Lotus</FontFamily>
+              <FontSize>11pt</FontSize>
+              <FontWeight>700</FontWeight>
+              <TextAlign>Right</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+              <Direction>RTL</Direction>
+              <Language>fa</Language>
+              <Calendar>Hijri</Calendar>
+              <NumeralLanguage>fa</NumeralLanguage>
+            </Style>
+            <ZIndex>6</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>1.75cm</Left>
+            <Height>0.75cm</Height>
+            <Value>امضا گیرنده</Value>
+          </Textbox>
+          <Textbox Name="textbox5">
+            <Top>6.75cm</Top>
+            <Width>16.25cm</Width>
+            <Style>
+              <BorderColor>
+                <Default>LightGrey</Default>
+              </BorderColor>
+              <FontFamily>B Lotus</FontFamily>
+              <FontSize>13pt</FontSize>
+              <FontWeight>700</FontWeight>
+              <TextAlign>Left</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+              <Direction>RTL</Direction>
+              <Language>fa</Language>
+              <Calendar>Hijri</Calendar>
+              <NumeralLanguage>fa</NumeralLanguage>
+            </Style>
+            <ZIndex>5</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.75cm</Left>
+            <Height>3.25001cm</Height>
+            <Value>=" مبلغ "+FormatNumber(Fields!mablagh.Value,0)+" تومان به اینجانب، "+Fields!name.Value.ToString()+" از طرف آموزشگاه موسیقی "+Fields!name.Value.ToString()+" بابت حقوق "+Fields!paidformonth.Value.ToString()+" ماه پرداخت گردیده است. "</Value>
+          </Textbox>
+          <Textbox Name="textbox33">
+            <Top>5.50001cm</Top>
+            <Width>2.5cm</Width>
+            <Style>
+              <BorderColor>
+                <Default>LightGrey</Default>
+              </BorderColor>
+              <BorderStyle>
+                <Bottom>Dotted</Bottom>
+              </BorderStyle>
+              <FontFamily>B Lotus</FontFamily>
+              <FontSize>11pt</FontSize>
+              <FontWeight>700</FontWeight>
+              <TextAlign>Left</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+              <Direction>RTL</Direction>
+              <Language>fa</Language>
+              <Calendar>Hijri</Calendar>
+              <NumeralLanguage>fa</NumeralLanguage>
+            </Style>
+            <ZIndex>4</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.77539cm</Height>
+            <Value>=Fields!date.Value</Value>
+          </Textbox>
+          <Textbox Name="textbox34">
+            <Top>5.50001cm</Top>
+            <Width>1.99206cm</Width>
+            <Style>
+              <BorderColor>
+                <Default>LightGrey</Default>
+              </BorderColor>
+              <FontFamily>B Lotus</FontFamily>
+              <FontSize>11pt</FontSize>
+              <FontWeight>700</FontWeight>
+              <TextAlign>Center</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+              <Direction>RTL</Direction>
+              <Language>fa</Language>
+              <Calendar>Hijri</Calendar>
+              <NumeralLanguage>fa</NumeralLanguage>
+            </Style>
+            <ZIndex>3</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>2.75397cm</Left>
+            <Height>0.75cm</Height>
+            <Value>تاریخ صدور:</Value>
+          </Textbox>
+          <Textbox Name="textbox32">
+            <Top>4.75001cm</Top>
+            <Width>2.49206cm</Width>
+            <Style>
+              <BorderColor>
+                <Default>LightGrey</Default>
+              </BorderColor>
+              <BorderStyle>
+                <Bottom>Dotted</Bottom>
+              </BorderStyle>
+              <FontFamily>B Lotus</FontFamily>
+              <FontSize>11pt</FontSize>
+              <FontWeight>700</FontWeight>
+              <TextAlign>Left</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+              <Direction>RTL</Direction>
+              <Language>fa</Language>
+              <Calendar>Hijri</Calendar>
+              <NumeralLanguage>fa</NumeralLanguage>
+            </Style>
+            <ZIndex>2</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25cm</Left>
+            <Height>0.77539cm</Height>
+            <Value>=Fields!id.Value</Value>
+          </Textbox>
+          <Textbox Name="textbox31">
+            <Top>4.75001cm</Top>
+            <Width>1.99206cm</Width>
+            <Style>
+              <BorderColor>
+                <Default>LightGrey</Default>
+              </BorderColor>
+              <FontFamily>B Lotus</FontFamily>
+              <FontSize>11pt</FontSize>
+              <FontWeight>700</FontWeight>
+              <TextAlign>Center</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+              <Direction>RTL</Direction>
+              <Language>fa</Language>
+              <Calendar>Hijri</Calendar>
+              <NumeralLanguage>fa</NumeralLanguage>
+            </Style>
+            <ZIndex>1</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>2.74999cm</Left>
+            <Height>0.75cm</Height>
+            <Value>شماره قبض</Value>
+          </Textbox>
+          <Table Name="table1">
+            <DataSetName>RohabDataSet_amoozeshgah</DataSetName>
+            <Top>0.25cm</Top>
+            <Width>17.25cm</Width>
+            <Style>
+              <BorderStyle>
+                <Default>Double</Default>
+              </BorderStyle>
+              <BorderWidth>
+                <Default>2pt</Default>
+              </BorderWidth>
+              <FontFamily>b zar</FontFamily>
+              <Direction>RTL</Direction>
+              <Language>fa-IR</Language>
+              <NumeralLanguage>fa-IR</NumeralLanguage>
+            </Style>
+            <Header>
+              <TableRows>
+                <TableRow>
+                  <TableCells>
+                    <TableCell>
+                      <ReportItems>
+                        <Image Name="image1">
+                          <Sizing>Fit</Sizing>
+                          <MIMEType>image/jpeg</MIMEType>
+                          <Source>Database</Source>
+                          <Style />
+                          <ZIndex>4</ZIndex>
+                          <Value>=First(Fields!photo.Value, "RohabDataSet_amoozeshgah")</Value>
+                        </Image>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox1">
+                          <rd:DefaultName>textbox1</rd:DefaultName>
+                          <Style>
+                            <Color>SteelBlue</Color>
+                            <FontFamily>B lotus</FontFamily>
+                            <FontSize>20pt</FontSize>
+                            <FontWeight>700</FontWeight>
+                            <TextAlign>Center</TextAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                          <ZIndex>3</ZIndex>
+                          <CanGrow>true</CanGrow>
+                          <Value>=" آموزشگاه موسیقی " +First(Fields!name.Value, "RohabDataSet_amoozeshgah")</Value>
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox3">
+                          <rd:DefaultName>textbox3</rd:DefaultName>
+                          <Style>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                          <ZIndex>2</ZIndex>
+                          <CanGrow>true</CanGrow>
+                          <Value />
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                  </TableCells>
+                  <Height>2.75cm</Height>
+                </TableRow>
+              </TableRows>
+            </Header>
+            <TableColumns>
+              <TableColumn>
+                <Width>4.75cm</Width>
+              </TableColumn>
+              <TableColumn>
+                <Width>8.75cm</Width>
+              </TableColumn>
+              <TableColumn>
+                <Width>3.75cm</Width>
+              </TableColumn>
+            </TableColumns>
+            <Height>3.43783cm</Height>
+            <Footer>
+              <TableRows>
+                <TableRow>
+                  <TableCells>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox8">
+                          <rd:DefaultName>textbox8</rd:DefaultName>
+                          <Style>
+                            <FontFamily>b lotus</FontFamily>
+                            <TextAlign>Right</TextAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                          <ZIndex>1</ZIndex>
+                          <CanGrow>true</CanGrow>
+                          <Value>=First(Fields!tel.Value, "RohabDataSet_amoozeshgah")+" : تلفن"</Value>
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ColSpan>2</ColSpan>
+                      <ReportItems>
+                        <Textbox Name="textbox9">
+                          <rd:DefaultName>textbox9</rd:DefaultName>
+                          <Style>
+                            <FontFamily>b lotus</FontFamily>
+                            <TextAlign>Right</TextAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                          <CanGrow>true</CanGrow>
+                          <Value>="آدرس : "+ First(Fields!address.Value, "RohabDataSet_amoozeshgah")</Value>
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                  </TableCells>
+                  <Height>0.68783cm</Height>
+                </TableRow>
+              </TableRows>
+            </Footer>
+            <Left>0.25cm</Left>
+          </Table>
+        </ReportItems>
+        <Width>17.75cm</Width>
+        <Style>
+          <BorderStyle>
+            <Default>Solid</Default>
+          </BorderStyle>
+          <Direction>RTL</Direction>
+        </Style>
+        <Grouping Name="list1_Details_Group">
+          <GroupExpressions>
+            <GroupExpression>=Fields!id.Value</GroupExpression>
+          </GroupExpressions>
+        </Grouping>
+        <Height>5.02032in</Height>
+      </List>
+    </ReportItems>
+    <Height>26.75002cm</Height>
+  </Body>
+  <Language>en-US</Language>
+  <TopMargin>1cm</TopMargin>
+  <PageHeight>29.7cm</PageHeight>
+</Report>
