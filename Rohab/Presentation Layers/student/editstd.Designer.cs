@@ -197,7 +197,7 @@
             this.txtreg_date.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txtreg_date.ForeColor = System.Drawing.Color.Black;
             this.txtreg_date.Location = new System.Drawing.Point(335, 160);
-            this.txtreg_date.Mask = "1300/00/00";
+            
             this.txtreg_date.Name = "txtreg_date";
             this.txtreg_date.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtreg_date.Size = new System.Drawing.Size(143, 22);

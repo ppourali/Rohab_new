@@ -109,7 +109,7 @@
             this.txttarikh.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txttarikh.ForeColor = System.Drawing.Color.Black;
             this.txttarikh.Location = new System.Drawing.Point(371, 34);
-            this.txttarikh.Mask = "1300/00/00";
+            
             this.txttarikh.Name = "txttarikh";
             this.txttarikh.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txttarikh.Size = new System.Drawing.Size(138, 22);

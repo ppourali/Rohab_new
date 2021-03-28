@@ -1,0 +1,895 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{56CC876E-2F57-4CEC-AA44-139723FC4EF8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Rohab</RootNamespace>
+    <AssemblyName>MusicAcademy</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>CNOTE.ICO</ApplicationIcon>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Business Layers\acc.cs" />
+    <Compile Include="Business Layers\Contact.cs" />
+    <Compile Include="Business Layers\Hazineh.cs" />
+    <Compile Include="Business Layers\hazineh_types.cs" />
+    <Compile Include="Business Layers\payments.cs" />
+    <Compile Include="Business Layers\Courses.cs" />
+    <Compile Include="Business Layers\Amoozeshgah.cs" />
+    <Compile Include="Business Layers\DB.cs" />
+    <Compile Include="Business Layers\ghabz.cs" />
+    <Compile Include="Business Layers\sms.cs" />
+    <Compile Include="Business Layers\std_history.cs" />
+    <Compile Include="Date.cs" />
+    <Compile Include="MyControls\CellPhoneTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyControls\CellPhoneTextBox.Designer.cs">
+      <DependentUpon>CellPhoneTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyControls\QuickSearchCombobox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyControls\QuickSearchCombobox.Designer.cs">
+      <DependentUpon>QuickSearchCombobox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyControls\FiveCharTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyControls\FiveCharTextBox.designer.cs">
+      <DependentUpon>FiveCharTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="M_A_DBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>M_A_DBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layers\charts\frmIncomePrintViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layers\charts\frmIncomePrintViewer.designer.cs">
+      <DependentUpon>frmIncomePrintViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layers\classes\frmClassesPrintViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layers\classes\frmClassesPrintViewer.designer.cs">
+      <DependentUpon>frmClassesPrintViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layers\frmBackupView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layers\frmBackupView.designer.cs">
+      <DependentUpon>frmBackupView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layers\frmCalender.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layers\frmCalender.Designer.cs">
+      <DependentUpon>frmCalender.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layers\ghabz\frmGhabzDaryaftIndividual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layers\ghabz\frmGhabzDaryaftIndividual.designer.cs">
+      <DependentUpon>frmGhabzDaryaftIndividual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layers\ghabz\frmGhabzEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layers\ghabz\frmGhabzEdit.designer.cs">
+      <DependentUpon>frmGhabzEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layers\ghabz\frmHazinehPeygiriPrintViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layers\ghabz\frmHazinehPeygiriPrintViewer.designer.cs">
+      <DependentUpon>frmHazinehPeygiriPrintViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layers\Hazineh\frmHazinehEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layers\Hazineh\frmHazinehEdit.designer.cs">
+      <DependentUpon>frmHazinehEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layers\Hazineh\frmHazinehInp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layers\Hazineh\frmHazinehInp.designer.cs">
+      <DependentUpon>frmHazinehInp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layers\Hazineh\frmHazinehprintviewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layers\Hazineh\frmHazinehprintviewer.designer.cs">
+      <DependentUpon>frmHazinehprintviewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layers\Hazineh\frmHazinehShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layers\Hazineh\frmHazinehShow.Designer.cs">
+      <DependentUpon>frmHazinehShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layers\Hazineh\frmHazinehView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layers\Hazineh\frmHazinehView.designer.cs">
+      <DependentUpon>frmHazinehView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layers\Hazineh\frmShortHazinehInp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layers\Hazineh\frmShortHazinehInp.Designer.cs">
+      <DependentUpon>frmShortHazinehInp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layers\Hozoor\frmHozoorPrintViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layers\Hozoor\frmHozoorPrintViewer.designer.cs">
+      <DependentUpon>frmHozoorPrintViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layers\Hozoor\frmHozoorInp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layers\Hozoor\frmHozoorInp.designer.cs">
+      <DependentUpon>frmHozoorInp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layers\Payments\frmPayments_koliPrintViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layers\Payments\frmPayments_koliPrintViewer.designer.cs">
+      <DependentUpon>frmPayments_koliPrintViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layers\classes\addclass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layers\classes\addclass.Designer.cs">
+      <DependentUpon>addclass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layers\classes\CloseClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layers\classes\CloseClass.Designer.cs">
+      <DependentUpon>CloseClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layers\classes\editclass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layers\classes\editclass.Designer.cs">
+      <DependentUpon>editclass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Business Layers\classes.cs" />
+    <Compile Include="Presentation Layers\classes\classview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layers\classes\classview.Designer.cs">
+      <DependentUpon>classview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layers\ghabz\frmGhabz_koliPrintViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layers\ghabz\frmGhabz_koliPrintViewer.designer.cs">
+      <DependentUpon>frmGhabz_koliPrintViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layers\Hozoor\frmHozoorEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layers\Hozoor\frmHozoorEdit.designer.cs">
+      <DependentUpon>frmHozoorEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layers\Hozoor\frmHozoorView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layers\Hozoor\frmHozoorView.designer.cs">
+      <DependentUpon>frmHozoorView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layers\Payments\frmGhabzPardakht.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layers\Payments\frmGhabzPardakht.designer.cs">
+      <DependentUpon>frmGhabzPardakht.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layers\Payments\frmPaymentEslah.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layers\Payments\frmPaymentEslah.designer.cs">
+      <DependentUpon>frmPaymentEslah.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layers\Payments\frmPaymentsView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layers\Payments\frmPaymentsView.designer.cs">
+      <DependentUpon>frmPaymentsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layers\Courses\addcourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layers\Courses\addcourse.Designer.cs">
+      <DependentUpon>addcourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layers\Amoozeshgah\frmaddAmoozeshgah.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layers\Amoozeshgah\frmaddAmoozeshgah.Designer.cs">
+      <DependentUpon>frmaddAmoozeshgah.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layers\ghabz\fromMonthPayers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layers\ghabz\fromMonthPayers.Designer.cs">
+      <DependentUpon>fromMonthPayers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layers\ghabz\frmGhabzDaryaft.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layers\ghabz\frmGhabzDaryaft.designer.cs">
+      <DependentUpon>frmGhabzDaryaft.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layers\ghabz\frmGhabzView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layers\ghabz\frmGhabzView.designer.cs">
+      <DependentUpon>frmGhabzView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="image.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="image.designer.cs">
+      <DependentUpon>image.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyControls\TimeMaskedTextbox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyControls\TimeMaskedTextbox.Designer.cs">
+      <DependentUpon>TimeMaskedTextbox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyControls\CurrencyTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyControls\CurrencyTextBox.designer.cs">
+      <DependentUpon>CurrencyTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyControls\DateMaskedTextbox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyControls\DateMaskedTextbox.Designer.cs">
+      <DependentUpon>DateMaskedTextbox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyControls\NormalCombobox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyControls\NormalCombobox.Designer.cs">
+      <DependentUpon>NormalCombobox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyControls\NormalTextbox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyControls\NormalTextbox.Designer.cs">
+      <DependentUpon>NormalTextbox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyControls\NumericalTextbox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyControls\NumericalTextbox.Designer.cs">
+      <DependentUpon>NumericalTextbox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Business Layers\hozoorclass.cs" />
+    <Compile Include="Presentation Layers\Payments\frmPayments_PrintViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layers\Payments\frmPayments_PrintViewer.designer.cs">
+      <DependentUpon>frmPayments_PrintViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layers\SMSPanel\addeditcontact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layers\SMSPanel\addeditcontact.Designer.cs">
+      <DependentUpon>addeditcontact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layers\SMSPanel\frmersalbehonarju.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layers\SMSPanel\frmersalbehonarju.Designer.cs">
+      <DependentUpon>frmersalbehonarju.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layers\SMSPanel\frmersalbeostad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layers\SMSPanel\frmersalbeostad.Designer.cs">
+      <DependentUpon>frmersalbeostad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layers\SMSPanel\frmersalbesayer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layers\SMSPanel\frmersalbesayer.Designer.cs">
+      <DependentUpon>frmersalbesayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layers\SMSPanel\frminboxsmslist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layers\SMSPanel\frminboxsmslist.Designer.cs">
+      <DependentUpon>frminboxsmslist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layers\SMSPanel\frmoutboxsmslist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layers\SMSPanel\frmoutboxsmslist.Designer.cs">
+      <DependentUpon>frmoutboxsmslist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layers\SMSPanel\frmtabrik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layers\SMSPanel\frmtabrik.Designer.cs">
+      <DependentUpon>frmtabrik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layers\SMSPanel\sendingLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layers\SMSPanel\sendingLog.Designer.cs">
+      <DependentUpon>sendingLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layers\smsScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layers\smsScreen.Designer.cs">
+      <DependentUpon>smsScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layers\sqlpanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layers\sqlpanel.Designer.cs">
+      <DependentUpon>sqlpanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layers\student\frmAllInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layers\student\frmAllInfo.Designer.cs">
+      <DependentUpon>frmAllInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layers\student\frmStdPrintViewerIndivi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layers\student\frmStdPrintViewerIndivi.designer.cs">
+      <DependentUpon>frmStdPrintViewerIndivi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layers\student\frmStdPrintViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layers\student\frmStdPrintViewer.designer.cs">
+      <DependentUpon>frmStdPrintViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layers\student_history\frmStdHisPrintViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layers\student_history\frmStdHisPrintViewer.designer.cs">
+      <DependentUpon>frmStdHisPrintViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layers\student_history\frmStdHisView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layers\student_history\frmStdHisView.designer.cs">
+      <DependentUpon>frmStdHisView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layers\student_history\frmStdMandehEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layers\student_history\frmStdMandehEdit.designer.cs">
+      <DependentUpon>frmStdMandehEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layers\teachers\addteacher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layers\teachers\addteacher.Designer.cs">
+      <DependentUpon>addteacher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Business Layers\teachers.cs" />
+    <Compile Include="Presentation Layers\teachers\frmHozoorByTeacherview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layers\teachers\frmHozoorByTeacherview.designer.cs">
+      <DependentUpon>frmHozoorByTeacherview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layers\teachers\frmTeacherPrintViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layers\teachers\frmTeacherPrintViewer.designer.cs">
+      <DependentUpon>frmTeacherPrintViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layers\teachers\teacherview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layers\teachers\teacherview.Designer.cs">
+      <DependentUpon>teacherview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layers\teachers\editteacher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layers\teachers\editteacher.Designer.cs">
+      <DependentUpon>editteacher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layers\student\editstd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layers\student\editstd.Designer.cs">
+      <DependentUpon>editstd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layers\frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layers\frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mydataaccess.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="MyControls\FiveCharTextBox.resx">
+      <DependentUpon>FiveCharTextBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layers\charts\frmIncomePrintViewer.resx">
+      <DependentUpon>frmIncomePrintViewer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layers\classes\frmClassesPrintViewer.resx">
+      <DependentUpon>frmClassesPrintViewer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layers\frmBackupView.resx">
+      <DependentUpon>frmBackupView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layers\frmCalender.resx">
+      <DependentUpon>frmCalender.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layers\ghabz\frmGhabzDaryaftIndividual.resx">
+      <DependentUpon>frmGhabzDaryaftIndividual.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layers\ghabz\frmGhabzEdit.resx">
+      <DependentUpon>frmGhabzEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layers\ghabz\frmHazinehPeygiriPrintViewer.resx">
+      <DependentUpon>frmHazinehPeygiriPrintViewer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layers\Hazineh\frmHazinehEdit.resx">
+      <DependentUpon>frmHazinehEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layers\Hazineh\frmHazinehInp.resx">
+      <DependentUpon>frmHazinehInp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layers\Hazineh\frmHazinehprintviewer.resx">
+      <DependentUpon>frmHazinehprintviewer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layers\Hazineh\frmHazinehShow.resx">
+      <DependentUpon>frmHazinehShow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layers\Hazineh\frmHazinehView.resx">
+      <DependentUpon>frmHazinehView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layers\Hazineh\frmShortHazinehInp.resx">
+      <DependentUpon>frmShortHazinehInp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layers\Hozoor\frmHozoorPrintViewer.resx">
+      <DependentUpon>frmHozoorPrintViewer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layers\Hozoor\frmHozoorInp.resx">
+      <DependentUpon>frmHozoorInp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layers\Payments\frmPayments_koliPrintViewer.resx">
+      <DependentUpon>frmPayments_koliPrintViewer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layers\classes\addclass.resx">
+      <DependentUpon>addclass.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layers\classes\CloseClass.resx">
+      <DependentUpon>CloseClass.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layers\classes\editclass.resx">
+      <DependentUpon>editclass.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layers\classes\classview.resx">
+      <DependentUpon>classview.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layers\ghabz\frmGhabz_koliPrintViewer.resx">
+      <DependentUpon>frmGhabz_koliPrintViewer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layers\Hozoor\frmHozoorEdit.resx">
+      <DependentUpon>frmHozoorEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layers\Hozoor\frmHozoorView.resx">
+      <DependentUpon>frmHozoorView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layers\Payments\frmGhabzPardakht.resx">
+      <DependentUpon>frmGhabzPardakht.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layers\Payments\frmPaymentEslah.resx">
+      <DependentUpon>frmPaymentEslah.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layers\Payments\frmPaymentsView.resx">
+      <DependentUpon>frmPaymentsView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layers\Courses\addcourse.resx">
+      <DependentUpon>addcourse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layers\Amoozeshgah\frmaddAmoozeshgah.resx">
+      <DependentUpon>frmaddAmoozeshgah.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layers\ghabz\fromMonthPayers.resx">
+      <DependentUpon>fromMonthPayers.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layers\ghabz\frmGhabzDaryaft.resx">
+      <DependentUpon>frmGhabzDaryaft.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layers\ghabz\frmGhabzView.resx">
+      <DependentUpon>frmGhabzView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="image.resx">
+      <DependentUpon>image.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layers\Payments\frmPayments_PrintViewer.resx">
+      <DependentUpon>frmPayments_PrintViewer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layers\Reports\rptGhabz_KolibyMonth.rdlc" />
+    <EmbeddedResource Include="Presentation Layers\Reports\rptHazineh.rdlc" />
+    <EmbeddedResource Include="Presentation Layers\Reports\rptStdhistory.rdlc" />
+    <EmbeddedResource Include="Presentation Layers\Reports\rptStdPeygiri.rdlc" />
+    <EmbeddedResource Include="Presentation Layers\Reports\rptIncome_Chart.rdlc" />
+    <EmbeddedResource Include="Presentation Layers\Reports\rptStdIndividual.rdlc" />
+    <EmbeddedResource Include="Presentation Layers\Reports\rptStdKoli.rdlc" />
+    <EmbeddedResource Include="Presentation Layers\Reports\rptPayments_Koli.rdlc" />
+    <EmbeddedResource Include="Presentation Layers\Reports\rptGhabz_Koli.rdlc" />
+    <EmbeddedResource Include="Presentation Layers\Reports\rptTeachers.rdlc" />
+    <EmbeddedResource Include="Presentation Layers\Reports\rptPayments.rdlc" />
+    <EmbeddedResource Include="Presentation Layers\SMSPanel\addeditcontact.resx">
+      <DependentUpon>addeditcontact.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layers\SMSPanel\frmersalbehonarju.resx">
+      <DependentUpon>frmersalbehonarju.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layers\SMSPanel\frmersalbeostad.resx">
+      <DependentUpon>frmersalbeostad.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layers\SMSPanel\frmersalbesayer.resx">
+      <DependentUpon>frmersalbesayer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layers\SMSPanel\frminboxsmslist.resx">
+      <DependentUpon>frminboxsmslist.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layers\SMSPanel\frmoutboxsmslist.resx">
+      <DependentUpon>frmoutboxsmslist.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layers\SMSPanel\frmtabrik.resx">
+      <DependentUpon>frmtabrik.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layers\SMSPanel\sendingLog.resx">
+      <DependentUpon>sendingLog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layers\smsScreen.resx">
+      <DependentUpon>smsScreen.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layers\sqlpanel.resx">
+      <DependentUpon>sqlpanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layers\student\frmAllInfo.resx">
+      <DependentUpon>frmAllInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layers\student\frmStdPrintViewerIndivi.resx">
+      <DependentUpon>frmStdPrintViewerIndivi.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layers\student\frmStdPrintViewer.resx">
+      <DependentUpon>frmStdPrintViewer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layers\student_history\frmStdHisPrintViewer.resx">
+      <DependentUpon>frmStdHisPrintViewer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layers\student_history\frmStdHisView.resx">
+      <DependentUpon>frmStdHisView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layers\student_history\frmStdMandehEdit.resx">
+      <DependentUpon>frmStdMandehEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layers\teachers\addteacher.resx">
+      <DependentUpon>addteacher.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layers\teachers\frmHozoorByTeacherview.resx">
+      <DependentUpon>frmHozoorByTeacherview.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layers\teachers\frmTeacherPrintViewer.resx">
+      <DependentUpon>frmTeacherPrintViewer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layers\teachers\teacherview.resx">
+      <DependentUpon>teacherview.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layers\teachers\editteacher.resx">
+      <DependentUpon>editteacher.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layers\student\editstd.resx">
+      <DependentUpon>editstd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layers\frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layers\student\addstd.resx">
+      <DependentUpon>addstd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layers\student\stdview.resx">
+      <DependentUpon>stdview.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layers\Users\frmChpass.resx">
+      <DependentUpon>frmChpass.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layers\Users\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layers\Reports\rptClasses.rdlc" />
+    <EmbeddedResource Include="Presentation Layers\Reports\rptHozoor.rdlc" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="RohabDataSet.xsc">
+      <DependentUpon>RohabDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="RohabDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RohabDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RohabDataSet.xss">
+      <DependentUpon>RohabDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference1\Rohab.ServiceReference1.ArrayOfLong.datasource" />
+    <None Include="Service References\ServiceReference1\Rohab.ServiceReference1.ArrayOfLong1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference1\Rohab.ServiceReference1.MessagesBL.datasource" />
+    <None Include="Service References\ServiceReference1\Rohab.ServiceReference1.MessagesBL1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference1\Send.wsdl" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Business Layers\std.cs" />
+    <Compile Include="Presentation Layers\student\addstd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layers\student\addstd.Designer.cs">
+      <DependentUpon>addstd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layers\student\stdview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layers\student\stdview.Designer.cs">
+      <DependentUpon>stdview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layers\Users\frmChpass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layers\Users\frmChpass.designer.cs">
+      <DependentUpon>frmChpass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layers\Users\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layers\Users\frmLogin.designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RohabDataSet.cs">
+      <DependentUpon>RohabDataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RohabDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RohabDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServiceReference1\Reference.cs" />
+    <Compile Include="Service References\ServiceReference1\Reference1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CNOTE.ICO" />
+    <None Include="M_A_DBDataSet.xsc">
+      <DependentUpon>M_A_DBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="M_A_DBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>M_A_DBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="M_A_DBDataSet.xss">
+      <DependentUpon>M_A_DBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\bg0.jpg" />
+    <None Include="Resources\bg1.jpg" />
+    <None Include="Resources\bg2.jpg" />
+    <None Include="Resources\bg3.jpg" />
+    <None Include="Resources\bg4.jpg" />
+    <None Include="Resources\bg5.jpg" />
+    <None Include="Resources\bg6.jpg" />
+    <None Include="Resources\bg7.jpg" />
+    <None Include="Resources\bg8.jpg" />
+    <Content Include="Service References\ServiceReference1\configuration.svcinfo" />
+    <Content Include="Service References\ServiceReference1\configuration91.svcinfo" />
+    <Content Include="Service References\ServiceReference1\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference1.cs</LastGenOutput>
+    </Content>
+    <Content Include="Service References\ServiceReference1\Send.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

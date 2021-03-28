@@ -154,7 +154,10 @@ namespace Rohab
 
         public string Selectmaxid()
         {
-            string year = this.reg_date.Substring(2, 2);
+            string year = "14";
+            if (!this.reg_date.StartsWith("14"))
+                year = this.reg_date.Substring(2, 2);
+            
             string s = "select max(stdno) from std where (stdno like N'" + year + "%')";
             da.Connect();
             DataTable dt = new DataTable();

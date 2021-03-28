@@ -371,7 +371,7 @@ namespace Rohab
             this.txtdate.ForeColor = System.Drawing.Color.Black;
             this.txtdate.Location = new System.Drawing.Point(31, 113);
             this.txtdate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtdate.Mask = "1300/00/00";
+            
             this.txtdate.Name = "txtdate";
             this.txtdate.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtdate.Size = new System.Drawing.Size(138, 22);
@@ -1071,7 +1071,7 @@ namespace Rohab
             this.class_txtdate.ForeColor = System.Drawing.Color.Black;
             this.class_txtdate.Location = new System.Drawing.Point(740, 18);
             this.class_txtdate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.class_txtdate.Mask = "1300/00/00";
+            
             this.class_txtdate.Name = "class_txtdate";
             this.class_txtdate.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.class_txtdate.Size = new System.Drawing.Size(138, 22);

@@ -34,8 +34,8 @@
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Font = new System.Drawing.Font("Tahoma", 9F);
             this.ForeColor = System.Drawing.Color.Black;
-            this.Mask = "1300/00/00";
-            //this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.Mask = Rohab.Utils.DateUtils.DateMaskFormat();
+            this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
         }
 

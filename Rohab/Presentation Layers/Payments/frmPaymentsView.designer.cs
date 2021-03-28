@@ -292,7 +292,7 @@ namespace Rohab
             this.txtlastdateto.Font = new System.Drawing.Font("Tahoma", 8.5F);
             this.txtlastdateto.ForeColor = System.Drawing.Color.Black;
             this.txtlastdateto.Location = new System.Drawing.Point(115, 46);
-            this.txtlastdateto.Mask = "1300/00/00";
+            
             this.txtlastdateto.Name = "txtlastdateto";
             this.txtlastdateto.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtlastdateto.Size = new System.Drawing.Size(100, 21);
@@ -307,7 +307,6 @@ namespace Rohab
             this.txtlastdatefrom.Font = new System.Drawing.Font("Tahoma", 8.5F);
             this.txtlastdatefrom.ForeColor = System.Drawing.Color.Black;
             this.txtlastdatefrom.Location = new System.Drawing.Point(115, 15);
-            this.txtlastdatefrom.Mask = "1300/00/00";
             this.txtlastdatefrom.Name = "txtlastdatefrom";
             this.txtlastdatefrom.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtlastdatefrom.Size = new System.Drawing.Size(100, 21);
@@ -338,7 +337,7 @@ namespace Rohab
             this.txttodate.Font = new System.Drawing.Font("Tahoma", 8.5F);
             this.txttodate.ForeColor = System.Drawing.Color.Black;
             this.txttodate.Location = new System.Drawing.Point(311, 48);
-            this.txttodate.Mask = "1300/00/00";
+            
             this.txttodate.Name = "txttodate";
             this.txttodate.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txttodate.Size = new System.Drawing.Size(100, 21);
@@ -354,7 +353,7 @@ namespace Rohab
             this.txtmos_date.Font = new System.Drawing.Font("Tahoma", 8.5F);
             this.txtmos_date.ForeColor = System.Drawing.Color.Black;
             this.txtmos_date.Location = new System.Drawing.Point(311, 17);
-            this.txtmos_date.Mask = "1300/00/00";
+            
             this.txtmos_date.Name = "txtmos_date";
             this.txtmos_date.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtmos_date.Size = new System.Drawing.Size(100, 21);

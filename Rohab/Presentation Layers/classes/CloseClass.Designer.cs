@@ -195,7 +195,6 @@
             this.txtopen_date.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txtopen_date.ForeColor = System.Drawing.Color.Black;
             this.txtopen_date.Location = new System.Drawing.Point(22, 20);
-            this.txtopen_date.Mask = "1300/00/00";
             this.txtopen_date.Name = "txtopen_date";
             this.txtopen_date.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtopen_date.Size = new System.Drawing.Size(138, 22);
@@ -393,7 +392,6 @@
             this.txtpayan_date.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txtpayan_date.ForeColor = System.Drawing.Color.Black;
             this.txtpayan_date.Location = new System.Drawing.Point(328, 202);
-            this.txtpayan_date.Mask = "1300/00/00";
             this.txtpayan_date.Name = "txtpayan_date";
             this.txtpayan_date.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtpayan_date.Size = new System.Drawing.Size(138, 22);

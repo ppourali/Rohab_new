@@ -24,7 +24,7 @@ namespace Rohab
 
 
                 SQL = SQL + "[type] like N'%" + txttype.Text.Trim() + "%'AND ";
-                if (txttarikh.Text != "13  /  /")
+                if (txttarikh.MaskCompleted)
             {
                 SQL = SQL + "[tarikh] like N'%" + txttarikh.Text.Trim() + "%'AND ";
                 check = true;

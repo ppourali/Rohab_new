@@ -541,7 +541,6 @@ namespace Rohab
             this.txtopen_date.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txtopen_date.ForeColor = System.Drawing.Color.Black;
             this.txtopen_date.Location = new System.Drawing.Point(15, 51);
-            this.txtopen_date.Mask = "1300/00/00";
             this.txtopen_date.Name = "txtopen_date";
             this.txtopen_date.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtopen_date.Size = new System.Drawing.Size(138, 22);

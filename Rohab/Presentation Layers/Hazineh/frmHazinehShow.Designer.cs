@@ -33,10 +33,10 @@
             this.btnexit = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtto_date = new System.Windows.Forms.MaskedTextBox();
+            this.txtto_date = new MyControls.DateMaskedTextbox();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtfrom_date = new System.Windows.Forms.MaskedTextBox();
+            this.txtfrom_date = new MyControls.DateMaskedTextbox();
             this.label5 = new System.Windows.Forms.Label();
             this.btnfilter = new System.Windows.Forms.Button();
             this.txttype = new System.Windows.Forms.TextBox();
@@ -123,7 +123,7 @@
             this.txtto_date.BackColor = System.Drawing.Color.White;
             this.txtto_date.ForeColor = System.Drawing.Color.Black;
             this.txtto_date.Location = new System.Drawing.Point(26, 20);
-            this.txtto_date.Mask = "1300/00/00";
+            
             this.txtto_date.Name = "txtto_date";
             this.txtto_date.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtto_date.Size = new System.Drawing.Size(102, 21);
@@ -163,7 +163,7 @@
             this.txtfrom_date.BackColor = System.Drawing.Color.White;
             this.txtfrom_date.ForeColor = System.Drawing.Color.Black;
             this.txtfrom_date.Location = new System.Drawing.Point(177, 20);
-            this.txtfrom_date.Mask = "1300/00/00";
+            
             this.txtfrom_date.Name = "txtfrom_date";
             this.txtfrom_date.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtfrom_date.Size = new System.Drawing.Size(103, 21);
@@ -309,10 +309,10 @@
         private System.Windows.Forms.Button btnexit;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.GroupBox groupBox1;
-        public System.Windows.Forms.MaskedTextBox txtto_date;
+        public MyControls.DateMaskedTextbox txtto_date;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
-        public System.Windows.Forms.MaskedTextBox txtfrom_date;
+        public MyControls.DateMaskedTextbox txtfrom_date;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnfilter;
         private System.Windows.Forms.TextBox txttype;
