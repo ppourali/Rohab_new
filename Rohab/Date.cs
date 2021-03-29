@@ -125,12 +125,18 @@ namespace Rohab
 
         public static int returnYearOfInputDate(string inputDate)
         {
+            if (inputDate.Trim().Length < 10)
+                return 1400;
+
             int yearNo = int.Parse(inputDate.Substring(0, 4));
             return yearNo;
         }
  
         public static int returnMonthOfInputDate(string inputDate)
         {
+            if (inputDate.Trim().Length < 10)
+                return 0;
+
             int monthNo = int.Parse(inputDate.Substring(5, 2));
             return monthNo;
         }
@@ -143,6 +149,9 @@ namespace Rohab
 
         public static string returnLastDateOfaDate(string inputDate)
         {
+            if (inputDate.Trim().Length < 10)
+                return "";
+
             string lastYear= inputDate.Substring(0, 4);
             string lastMonth = inputDate.Substring(5, 2);
             string lastDay = "";
