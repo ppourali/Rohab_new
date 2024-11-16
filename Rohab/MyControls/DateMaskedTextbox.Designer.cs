@@ -1,4 +1,8 @@
-﻿namespace MyControls
+﻿using System.Windows.Forms;
+using System;
+using System.Globalization;
+
+namespace MyControls
 {
     partial class DateMaskedTextbox
     {
@@ -35,6 +39,8 @@
             this.Font = new System.Drawing.Font("Tahoma", 9F);
             this.ForeColor = System.Drawing.Color.Black;
             this.Mask = Rohab.Utils.DateUtils.DateMaskFormat();
+            this.Culture = new CultureInfo("en-US"); // Use US culture or a culture with the desired format
+            this.ValidatingType = typeof(DateTime);
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
         }
