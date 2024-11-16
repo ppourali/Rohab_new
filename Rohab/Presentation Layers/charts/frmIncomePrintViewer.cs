@@ -53,7 +53,7 @@ namespace Rohab
 
             string[] fromdate=new string[12];
             string[] todate=new string[12];
-            string[] months = { "فروردین", "اردیبهشت", "خرداد", "تیر", "مرداد", "شهریور", "مهر", "آبان", "آذر", "دی", "بهمن", "اسفند" };
+            string[] months = Localization.GetMonths();
 
             for(int i=1;i<=12;i++){
                 fromdate[i-1]=year +i.ToString("00") +@"/01";

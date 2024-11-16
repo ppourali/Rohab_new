@@ -37,9 +37,9 @@
             // 
             // reportViewer1
             // 
-            this.reportViewer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.reportViewer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.reportViewer1.Location = new System.Drawing.Point(0, 48);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ShowBackButton = false;
@@ -72,7 +72,7 @@
             this.txtyear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtyear.Location = new System.Drawing.Point(643, 21);
             this.txtyear.Maximum = new decimal(new int[] {
-            1500,
+            3000,
             0,
             0,
             0});
@@ -91,9 +91,9 @@
             0,
             0,
             0});
-            this.txtyear.Leave += new System.EventHandler(this.Leave_Action);
             this.txtyear.Enter += new System.EventHandler(this.Enter_Action);
             this.txtyear.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyDown_Action);
+            this.txtyear.Leave += new System.EventHandler(this.Leave_Action);
             // 
             // btnRefresh
             // 

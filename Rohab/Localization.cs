@@ -260,7 +260,7 @@ namespace Rohab
             }
             else { return new string[] {"January", "February",
             "March", "April", "May", "June", "July",
-            "August", "October", "November", "December"}; }
+            "August", "September", "October", "November", "December"}; }
         }
 
         public static bool IsCountryIranOnLocale()

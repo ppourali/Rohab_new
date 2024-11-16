@@ -360,8 +360,8 @@
             // 
             // panel1
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel1.Controls.Add(this.btnfilter);
@@ -396,6 +396,7 @@
             this.txtdateFrom.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txtdateFrom.ForeColor = System.Drawing.Color.Black;
             this.txtdateFrom.Location = new System.Drawing.Point(182, 16);
+            this.txtdateFrom.Mask = "0000/00/00";
             this.txtdateFrom.Name = "txtdateFrom";
             this.txtdateFrom.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtdateFrom.Size = new System.Drawing.Size(89, 22);
@@ -443,6 +444,7 @@
             this.txtdateTo.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txtdateTo.ForeColor = System.Drawing.Color.Black;
             this.txtdateTo.Location = new System.Drawing.Point(182, 43);
+            this.txtdateTo.Mask = "0000/00/00";
             this.txtdateTo.Name = "txtdateTo";
             this.txtdateTo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtdateTo.Size = new System.Drawing.Size(89, 22);
@@ -531,7 +533,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackColor = System.Drawing.Color.LightBlue;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.CancelButton = this.btnexit;
             this.ClientSize = new System.Drawing.Size(1022, 569);
