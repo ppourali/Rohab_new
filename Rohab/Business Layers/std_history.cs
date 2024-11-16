@@ -1,4 +1,4 @@
-using System;
+ï»¿using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Data;
@@ -31,12 +31,12 @@ namespace Rohab
 
         public void Add_firstly()
         {
-            if (this.tashkhis.Equals("ÈÏå˜ÇÑ"))
+            if (this.tashkhis.Equals("Ø¨Ø¯Ù‡Ú©Ø§Ø±"))
             {
                 this.bedehkari = this.mandeh;
                 this.bestankari = 0;
             }
-            else if (this.tashkhis.Equals("ÈÓÊÇä˜ÇÑ"))
+            else if (this.tashkhis.Equals("Ø¨Ø³ØªØ§Ù†Ú©Ø§Ø±"))
             {
                 this.bestankari = this.mandeh;
                 this.bedehkari = 0;
@@ -117,7 +117,7 @@ namespace Rohab
             UpdateMandeh();
             
             s = "UPDATE std_history SET  sharh=N'{0}',date=N'{1}',bestankari={2} WHERE (ghabz_id=N'{3}' and stdno = N'{4}' and bedehkari=0)";
-            this.sharh = "ÑÏÇÎÊ æÌå ÇÒ ÈÇÈÊ " + this.sharh;
+            this.sharh = "ÂÃ‘ÃÃ‡ÃŽÃŠ Ã¦ÃŒÃ¥ Ã‡Ã’ ÃˆÃ‡ÃˆÃŠ " + this.sharh;
             s = string.Format(s, this.sharh, this.date, this.bestankari, this.ghabz_id, this.stdno);
             
             da.docommand(s);
@@ -148,11 +148,11 @@ namespace Rohab
 
                 if (lastmandeh > 0)
                 {
-                    tashkhisRow = "ÈÓÊÇä˜ÇÑ";
+                    tashkhisRow = "Ø¨Ø³ØªØ§Ù†Ú©Ø§Ø±";
                 }
                 else if (lastmandeh <= 0)
                 {
-                    tashkhisRow = "ÈÏå˜ÇÑ";
+                    tashkhisRow = "Ø¨Ø¯Ù‡Ú©Ø§Ø±";
                 }
 
                 UpdateAfterHamahangSazi(tashkhisRow, Math.Abs(lastmandeh), long.Parse(dt.Rows[i]["radif"].ToString()), dt.Rows[i]["stdno"].ToString(), i);
