@@ -99,7 +99,7 @@
             this.label2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label2.Size = new System.Drawing.Size(31, 13);
             this.label2.TabIndex = 99;
-            this.label2.Text = CurrencyLocalization.GetCurrencyUnit();
+            this.label2.Text = Localization.GetCurrencyUnit();
             // 
             // label1
             // 
@@ -114,7 +114,7 @@
             this.label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label1.Size = new System.Drawing.Size(31, 13);
             this.label1.TabIndex = 98;
-            this.label1.Text = CurrencyLocalization.GetCurrencyUnit();
+            this.label1.Text = Localization.GetCurrencyUnit();
             // 
             // txthesab
             // 

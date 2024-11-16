@@ -458,7 +458,7 @@ namespace Rohab
             this.lbltooman2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lbltooman2.Size = new System.Drawing.Size(31, 13);
             this.lbltooman2.TabIndex = 147;
-            this.lbltooman2.Text = CurrencyLocalization.GetCurrencyUnit();
+            this.lbltooman2.Text = Localization.GetCurrencyUnit();
             // 
             // lblbemablagh
             // 

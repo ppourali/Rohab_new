@@ -23,11 +23,11 @@ namespace Rohab
 
         private void frmGhabzDaryaftIndividual_Load(object sender, EventArgs e)
         {
-            txtlastcheck.Items.AddRange(Date.GetMonths());
+            txtlastcheck.Items.AddRange(Localization.GetMonths());
 
             System.Globalization.CultureInfo inp = new System.Globalization.CultureInfo("fa-IR");
             InputLanguage.CurrentInputLanguage = InputLanguage.FromCulture(inp);
-            cur_date = Date.currentDate_Getter();
+            cur_date = Localization.currentDate_Getter();
 
             Courses co = new Courses();
             DataTable dtname = new DataTable();
@@ -59,7 +59,7 @@ namespace Rohab
             txtname.Text = dtstdname.Rows[0]["name"].ToString();
             txtstdno.Text = dtstdname.Rows[0]["stdno"].ToString();
 
-            txtlastdate.Text = Date.returnLastDateOfaDate(txtdate.Text);
+            txtlastdate.Text = Localization.returnLastDateOfaDate(txtdate.Text);
 
             groupBox1.Focus();
             txtname.Focus();
@@ -139,13 +139,13 @@ namespace Rohab
 
             if (sender.Equals(txtdate))
             {
-                txtlastdate.Text= Date.returnLastDateOfaDate(txtdate.Text);
+                txtlastdate.Text= Localization.returnLastDateOfaDate(txtdate.Text);
 
-                txtlastcheck.SelectedIndex = Date.returnMonthOfInputDate(txtdate.Text) -1;
+                txtlastcheck.SelectedIndex = Localization.returnMonthOfInputDate(txtdate.Text) -1;
             }
 
             if (sender.Equals(txtlastcheck))
-                txtlastdate.Text = Date.returnLastDateOfaDate(txtdate.Text, txtlastcheck.SelectedIndex);
+                txtlastdate.Text = Localization.returnLastDateOfaDate(txtdate.Text, txtlastcheck.SelectedIndex);
 
             if (sender == txtmablagh)
             {
@@ -188,7 +188,7 @@ namespace Rohab
 
         private void txtlastcheck_SelectedIndexChanged(object sender, EventArgs e)
         {
-            txtlastdate.Text = Date.returnLastDateOfaDate(txtdate.Text, txtlastcheck.SelectedIndex);
+            txtlastdate.Text = Localization.returnLastDateOfaDate(txtdate.Text, txtlastcheck.SelectedIndex);
         }
 
         private void txtartcourse_Enter(object sender, EventArgs e)

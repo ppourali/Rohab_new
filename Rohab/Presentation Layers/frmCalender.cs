@@ -88,7 +88,7 @@ namespace Rohab
 
         private void frmCalender_Load(object sender, EventArgs e)
         {
-            cur_date = Date.currentDate_Getter();
+            cur_date = Localization.currentDateShamsi_Getter();
             DeskTopCalender();
         }
 

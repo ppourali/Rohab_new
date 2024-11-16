@@ -6,12 +6,17 @@ using System.Globalization;
 
 namespace Rohab
 {
-    public static class Date
+    public static class Localization
     {
-        static bool isShamsi = false;
+        static bool isShamsi = GetCountryBasedOnLocale();
         private static string currentDate;
         private static string currentDateShamsi;
 
+        public static string GetCurrencyUnit()
+        {
+            if (isShamsi) { return "تومان"; }
+            else { return "Dollar"; }
+        }
 
         public static void currentDate_Setter()
         {
@@ -34,6 +39,12 @@ namespace Rohab
             {
                 return currentDate;
             }
+        }
+
+        public static string currentDateShamsi_Getter()
+        {
+
+            return currentDateShamsi;
         }
 
         public static string Shamsi(string date)
@@ -250,6 +261,21 @@ namespace Rohab
             else { return new string[] {"January", "February",
             "March", "April", "May", "June", "July",
             "August", "October", "November", "December"}; }
+        }
+
+        private static bool GetCountryBasedOnLocale()
+        {
+            var currentCulture = CultureInfo.CurrentCulture;
+            var region = currentCulture.Name; // E.g., "en-CA" for Canada, "fa-IR" for Iran
+
+            if (region.StartsWith("fa-IR"))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }

@@ -81,7 +81,7 @@ namespace Rohab
                     //-----------------------
                     // tarikh shamsi
 
-                    dataGridView1.Rows[i].Cells["SendDate"].Value = Date.Shamsi(dataGridView1.Rows[i].Cells["SendDate"].Value.ToString().Substring(0,10));
+                    dataGridView1.Rows[i].Cells["SendDate"].Value = Localization.Shamsi(dataGridView1.Rows[i].Cells["SendDate"].Value.ToString().Substring(0,10));
 
 
 

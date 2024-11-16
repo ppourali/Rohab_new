@@ -77,7 +77,7 @@ namespace Rohab.Presentation_Layers
         {
                         System.Globalization.CultureInfo inp = new System.Globalization.CultureInfo("fa-IR");
             InputLanguage.CurrentInputLanguage = InputLanguage.FromCulture(inp);
-            cur_date = Date.currentDate_Getter();
+            cur_date = Localization.currentDate_Getter();
 
             hazineh_types ba = new hazineh_types();
             txttype.DataSource = ba.SelectforComboBox();

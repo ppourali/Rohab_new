@@ -339,7 +339,7 @@ namespace Rohab.Presentation_Layers
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(33, 14);
             this.label1.TabIndex = 9;
-            this.label1.Text = CurrencyLocalization.GetCurrencyUnit();
+            this.label1.Text = Localization.GetCurrencyUnit();
             // 
             // txtdate
             // 

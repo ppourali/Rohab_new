@@ -10,11 +10,7 @@ namespace Rohab
     {
         static bool isShamsi = false;
 
-        public static string GetCurrencyUnit()
-        {
-            if (isShamsi) { return "تومان"; }
-            else { return "Dollar"; }
-        }
+        
 
     }
 }

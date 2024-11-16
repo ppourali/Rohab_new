@@ -78,7 +78,7 @@ namespace Rohab
                     sm.shomaremaghsad = phonenumber;
                     sm.tahvilgirande = dr.Cells[2].Value.ToString();
                     //sm.tahvilshod = i == 1 ? true : false;
-                    sm.tarikh = Date.Shamsiwithtime(DateTime.Now);
+                    sm.tarikh = Localization.Shamsiwithtime(DateTime.Now);
                     try
                     {
                         if (((DataTable)dr.DataGridView.DataSource).Columns[3].Caption.Contains("birthdate"))

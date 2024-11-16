@@ -57,7 +57,7 @@ namespace Rohab
               sm.shomaremaghsad = msgcontent;
               sm.tahvilgirande = phonenumber;
               sm.tahvilshod = true;
-              sm.tarikh = Date.Shamsiwithtime(DateTime.Now);
+              sm.tarikh = Localization.Shamsiwithtime(DateTime.Now);
               sm.type = "ارسال به سایر";
               sm.Add();
           }

@@ -230,7 +230,7 @@ namespace Rohab
             //Tag = 0;
 
             timeDispaly.Text = DateTime.Now.ToLongTimeString();
-            dateDisplay.Text = Date.currentDate_Getter();
+            dateDisplay.Text = Localization.currentDate_Getter();
            
             Amoozeshgah sh = new Amoozeshgah();
             toolStripStatusLabel3.Text += sh.Select().Rows[0]["name"].ToString();
@@ -301,7 +301,7 @@ namespace Rohab
             Cursor.Current = Cursors.WaitCursor;
 
             saveFileDialog1.InitialDirectory = Application.StartupPath + "\\Backup";
-            saveFileDialog1.FileName = Date.currentDate_Getter().Replace("/","").Trim();
+            saveFileDialog1.FileName = Localization.currentDate_Getter().Replace("/","").Trim();
             if (saveFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 string a = saveFileDialog1.FileName.ToString();
@@ -310,7 +310,7 @@ namespace Rohab
                 {
                     DB back = new DB();
                     back.path = a;
-                    back.Backup_name = Date.currentDate_Getter() + "-" + DateTime.Now.ToLongTimeString().Substring(0, 8);
+                    back.Backup_name = Localization.currentDate_Getter() + "-" + DateTime.Now.ToLongTimeString().Substring(0, 8);
                     back.CreateBackup();
 
                     MessageBox.Show("تهیه فایل پشتیبان با موفقیت انجام شد", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -523,7 +523,7 @@ namespace Rohab
             if (IsOpen == false)
             {
                 frmIncomePrintViewer fsm = new frmIncomePrintViewer();
-                fsm.txtyear.Value = decimal.Parse(Date.currentDate_Getter().Substring(0, 4));
+                fsm.txtyear.Value = decimal.Parse(Localization.currentDate_Getter().Substring(0, 4));
                 fsm.Show();
             }
         }
@@ -955,13 +955,13 @@ namespace Rohab
 
                 if (System.IO.Directory.Exists(Application.StartupPath + @"\Backup"))
                 {
-                    string a = Application.StartupPath + "\\Backup\\" + Date.currentDate_Getter().Replace('/', '.') + ".bak";
+                    string a = Application.StartupPath + "\\Backup\\" + Localization.currentDate_Getter().Replace('/', '.') + ".bak";
 
                     try
                     {
                         DB back = new DB();
                         back.path = a;
-                        back.Backup_name = Date.currentDate_Getter() + "-" + DateTime.Now.ToLongTimeString().Substring(0, 8);
+                        back.Backup_name = Localization.currentDate_Getter() + "-" + DateTime.Now.ToLongTimeString().Substring(0, 8);
                         back.CreateBackup();
 
                     }
@@ -973,13 +973,13 @@ namespace Rohab
                 else
                 {
                     System.IO.Directory.CreateDirectory(Application.StartupPath + @"\Backup");
-                    string a = Application.StartupPath + "\\Backup\\" + Date.currentDate_Getter().Replace('/', '.') + ".bak";
+                    string a = Application.StartupPath + "\\Backup\\" + Localization.currentDate_Getter().Replace('/', '.') + ".bak";
 
                     try
                     {
                         DB back = new DB();
                         back.path = a;
-                        back.Backup_name = Date.currentDate_Getter() + "-" + DateTime.Now.ToLongTimeString().Substring(0, 8);
+                        back.Backup_name = Localization.currentDate_Getter() + "-" + DateTime.Now.ToLongTimeString().Substring(0, 8);
                         back.CreateBackup();
                     }
                     catch (Exception)

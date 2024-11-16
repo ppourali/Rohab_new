@@ -220,13 +220,13 @@ namespace Rohab
         {
             string s = "select stdno,name,mob , birthdate from std"
                 + " WHERE " +
-                "(birthdate Like'%" + Date.Shamsi(DateTime.Now.AddDays(-3).ToShortDateString()).Substring(5) + "') OR " +
-                "(birthdate Like'%" + Date.Shamsi(DateTime.Now.AddDays(-2).ToShortDateString()).Substring(5) + "') OR " +
-                "(birthdate Like'%" + Date.Shamsi(DateTime.Now.AddDays(-1).ToShortDateString()).Substring(5) + "') OR " +
-                "(birthdate Like'%" + Date.Shamsi(DateTime.Now.ToShortDateString()).Substring(5) + "') OR " +
-                "(birthdate Like'%" + Date.Shamsi(DateTime.Now.AddDays(1).ToShortDateString()).Substring(5) + "') OR " +
-                "(birthdate Like'%" + Date.Shamsi(DateTime.Now.AddDays(2).ToShortDateString()).Substring(5) + "') OR " +
-                "(birthdate Like'%" + Date.Shamsi(DateTime.Now.AddDays(3).ToShortDateString()).Substring(5) + "') order by birthdate asc";
+                "(birthdate Like'%" + Localization.Shamsi(DateTime.Now.AddDays(-3).ToShortDateString()).Substring(5) + "') OR " +
+                "(birthdate Like'%" + Localization.Shamsi(DateTime.Now.AddDays(-2).ToShortDateString()).Substring(5) + "') OR " +
+                "(birthdate Like'%" + Localization.Shamsi(DateTime.Now.AddDays(-1).ToShortDateString()).Substring(5) + "') OR " +
+                "(birthdate Like'%" + Localization.Shamsi(DateTime.Now.ToShortDateString()).Substring(5) + "') OR " +
+                "(birthdate Like'%" + Localization.Shamsi(DateTime.Now.AddDays(1).ToShortDateString()).Substring(5) + "') OR " +
+                "(birthdate Like'%" + Localization.Shamsi(DateTime.Now.AddDays(2).ToShortDateString()).Substring(5) + "') OR " +
+                "(birthdate Like'%" + Localization.Shamsi(DateTime.Now.AddDays(3).ToShortDateString()).Substring(5) + "') order by birthdate asc";
             da.Connect();
             DataTable dt = new DataTable();
             dt = da.select(s);

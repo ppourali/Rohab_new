@@ -21,11 +21,11 @@ namespace Rohab
 
         private void frmGhabzPardakht_Load(object sender, EventArgs e)
         {
-            txtpaidformonth.Items.AddRange(Date.GetMonths());
+            txtpaidformonth.Items.AddRange(Localization.GetMonths());
 
             System.Globalization.CultureInfo inp = new System.Globalization.CultureInfo("fa-IR");
             InputLanguage.CurrentInputLanguage = InputLanguage.FromCulture(inp);
-            cur_date = Date.currentDate_Getter();
+            cur_date = Localization.currentDate_Getter();
             newform();
 
 

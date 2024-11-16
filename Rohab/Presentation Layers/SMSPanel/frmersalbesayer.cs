@@ -28,7 +28,7 @@ namespace Rohab
         {
             System.Globalization.CultureInfo inp = new System.Globalization.CultureInfo("fa-IR");
             InputLanguage.CurrentInputLanguage = InputLanguage.FromCulture(inp);
-            cur_date = Date.currentDate_Getter();
+            cur_date = Localization.currentDate_Getter();
 
             DataGridViewCheckBoxColumn checkColumn = new DataGridViewCheckBoxColumn();
             checkColumn.Name = "x";
@@ -40,7 +40,7 @@ namespace Rohab
             UpdateGridview();
             CultureInfo fair = new CultureInfo("fa-IR");
             IFormatProvider ifp = new CultureInfo("fa-IR", true);
-            txtreg_date.Text = Date.currentDate_Getter().ToString(ifp);
+            txtreg_date.Text = Localization.currentDate_Getter().ToString(ifp);
             thrd = new Thread(new ThreadStart(UpdateBilling));
             thrd.IsBackground = true;
             thrd.Start(); 

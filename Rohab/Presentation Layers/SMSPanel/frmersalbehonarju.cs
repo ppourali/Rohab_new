@@ -28,7 +28,7 @@ namespace Rohab
         {
             System.Globalization.CultureInfo inp = new System.Globalization.CultureInfo("fa-IR");
             InputLanguage.CurrentInputLanguage = InputLanguage.FromCulture(inp);
-            cur_date = Date.currentDate_Getter();
+            cur_date = Localization.currentDate_Getter();
 
             DataGridViewCheckBoxColumn checkColumn = new DataGridViewCheckBoxColumn();
             checkColumn.Name = "x";
@@ -38,7 +38,7 @@ namespace Rohab
             checkColumn.FillWeight = 60; //if the datagridview is resized (on form resize) the checkbox won't take up too much; value is relative to the other columns' fill values
             dataGridView1.Columns.Add(checkColumn);
             UpdateGridview();
-            txtreg_date.Text = Date.currentDate_Getter();
+            txtreg_date.Text = Localization.currentDate_Getter();
             thrd = new Thread(new ThreadStart(UpdateBilling));
             thrd.IsBackground = true;
             thrd.Start(); 

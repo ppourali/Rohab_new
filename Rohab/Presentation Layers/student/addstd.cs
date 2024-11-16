@@ -117,7 +117,7 @@ namespace Rohab
         {
             System.Globalization.CultureInfo inp = new System.Globalization.CultureInfo("fa-IR");
             InputLanguage.CurrentInputLanguage = InputLanguage.FromCulture(inp);
-            cur_date = Date.currentDate_Getter();
+            cur_date = Localization.currentDate_Getter();
 
             FillDataSetAndView();
             if (objCurrencyManager.Count == 0)
