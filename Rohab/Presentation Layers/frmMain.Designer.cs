@@ -538,7 +538,7 @@
             // 
             this.کلمهعبورToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("کلمهعبورToolStripMenuItem.Image")));
             this.کلمهعبورToolStripMenuItem.Name = "کلمهعبورToolStripMenuItem";
-            this.کلمهعبورToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
+            this.کلمهعبورToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.کلمهعبورToolStripMenuItem.Text = "کاربران";
             this.کلمهعبورToolStripMenuItem.Click += new System.EventHandler(this.کلمهعبورToolStripMenuItem_Click);
             // 
@@ -546,7 +546,7 @@
             // 
             this.اطلاعاتآموزشگاهToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("اطلاعاتآموزشگاهToolStripMenuItem.Image")));
             this.اطلاعاتآموزشگاهToolStripMenuItem.Name = "اطلاعاتآموزشگاهToolStripMenuItem";
-            this.اطلاعاتآموزشگاهToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
+            this.اطلاعاتآموزشگاهToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.اطلاعاتآموزشگاهToolStripMenuItem.Text = "اطلاعات آموزشگاه";
             this.اطلاعاتآموزشگاهToolStripMenuItem.Click += new System.EventHandler(this.اطلاعاتآموزشگاهToolStripMenuItem_Click);
             // 
@@ -559,7 +559,7 @@
             this.بازگردانیاطلاعاتخامنرمافزارToolStripMenuItem});
             this.ایجادفایلپشتیبانToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("ایجادفایلپشتیبانToolStripMenuItem.Image")));
             this.ایجادفایلپشتیبانToolStripMenuItem.Name = "ایجادفایلپشتیبانToolStripMenuItem";
-            this.ایجادفایلپشتیبانToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
+            this.ایجادفایلپشتیبانToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.ایجادفایلپشتیبانToolStripMenuItem.Text = "پشتیبانی اطلاعات";
             // 
             // تهیهیفایلپشتیبانToolStripMenuItem
@@ -700,8 +700,8 @@
             this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton2.Name = "toolStripButton2";
             this.toolStripButton2.Padding = new System.Windows.Forms.Padding(5);
-            this.toolStripButton2.Size = new System.Drawing.Size(171, 33);
-            this.toolStripButton2.Text = "حضور و غیاب هنرجویان  F1";
+            this.toolStripButton2.Size = new System.Drawing.Size(167, 33);
+            this.toolStripButton2.Text = "حضور و غیاب هنرجویان F3";
             this.toolStripButton2.ToolTipText = "حضور و غیاب هنرجویان  F1";
             this.toolStripButton2.Click += new System.EventHandler(this.toolStripButton2_Click);
             // 
@@ -717,7 +717,7 @@
             this.toolStripButton3.Name = "toolStripButton3";
             this.toolStripButton3.Padding = new System.Windows.Forms.Padding(5);
             this.toolStripButton3.Size = new System.Drawing.Size(170, 33);
-            this.toolStripButton3.Text = "ثبت اطلاعات هنرجویان  F3";
+            this.toolStripButton3.Text = "ثبت اطلاعات هنرجویان  F1";
             this.toolStripButton3.Click += new System.EventHandler(this.toolStripButton3_Click);
             // 
             // toolStripSeparator6
@@ -936,10 +936,10 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "آموزشگاه موسیقی ";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.Form1_Load);
-            this.SizeChanged += new System.EventHandler(this.Form1_SizeChanged);
-            this.Shown += new System.EventHandler(this.frmMain_Shown);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Shown += new System.EventHandler(this.frmMain_Shown);
+            this.SizeChanged += new System.EventHandler(this.Form1_SizeChanged);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

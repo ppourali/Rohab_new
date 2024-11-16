@@ -64,7 +64,10 @@ namespace Rohab
                     }
 
             }
-            return rtn;
+            if (!Localization.IsCountryIranOnLocale())
+            { rtn += 2; }
+
+            return rtn%7;
         }
 
         private void frmHozoor_Load(object sender, EventArgs e)
