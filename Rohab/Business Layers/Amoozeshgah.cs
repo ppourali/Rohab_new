@@ -9,20 +9,21 @@ namespace Rohab
 {
     class Amoozeshgah
     {
-        public string name,tel, address;
+        public string name, tel, address;
         public byte[] photo = null;
         SqlDataReader dsr = null;
         public bool flag = false;
 
-        
+
         mydataaccess da = new mydataaccess();
 
         public void Add()
         {
             string s;
-            if (flag){
+            if (flag)
+            {
                 s = "insert into Amoozeshgah (name,tel,address,photo) Values (N'{0}',N'{1}',N'{2}',@img_photo_file)";
-                s = string.Format(s,this.name, this.tel, this.address );
+                s = string.Format(s, this.name, this.tel, this.address);
                 da.cmd.Parameters.Add("@img_photo_file", SqlDbType.Image, photo.Length).Value = photo;
             }
             else
@@ -30,7 +31,7 @@ namespace Rohab
                 s = "insert into Amoozeshgah (name,tel,address) Values (N'{0}',N'{1}',N'{2}')";
                 s = string.Format(s, this.name, this.tel, this.address);
             }
-            
+
             da.Connect();
             da.docommand(s);
             da.disconnect();
@@ -61,18 +62,18 @@ namespace Rohab
             }
             da.Connect();
             da.docommand(s);
-            
+
             da.disconnect();
         }
 
         public void Updateforpic()
         {
             string s = "Update Amoozeshgah set photo=NULL where name=N'{0}'";
-            s = string.Format(s,this.name);
-            
+            s = string.Format(s, this.name);
+
             da.Connect();
             da.docommand(s);
-           
+
             da.disconnect();
         }
 
@@ -93,7 +94,7 @@ namespace Rohab
             DataTable dt = new DataTable();
             dt = da.select(s);
             da.disconnect();
-            
+
             return dt;
         }
 
@@ -128,7 +129,7 @@ namespace Rohab
         //    string str ;
         //    str = da.doscalar(s);
         //    da.disconnect();
-            
+
         //    return str;
         //}
 
@@ -147,15 +148,10 @@ namespace Rohab
 
         public void RESET()
         {
-            DataTable tablenames = Search("Select table_name from INFORMATION_SCHEMA.tables");
-
             da.Connect();
-            foreach (DataRow dtr in tablenames.Rows)
-            {
-                string s = "DELETE FROM {0}";
-                s = string.Format(s, dtr["TABLE_NAME"]);
-                da.docommand(s);
-            }
+
+            string s = "BEGIN TRANSACTION;\r\n\r\n-- Step 1: Disable all foreign key constraints\r\nEXEC sp_MSforeachtable \"ALTER TABLE ? NOCHECK CONSTRAINT ALL\";\r\n\r\n-- Step 2: Delete all rows from all tables\r\nEXEC sp_MSforeachtable \"DELETE FROM ?\";\r\n\r\n-- Step 3: Re-enable all foreign key constraints (optional)\r\nEXEC sp_MSforeachtable \"ALTER TABLE ? CHECK CONSTRAINT ALL\";\r\n\r\nCOMMIT TRANSACTION;\r\n";
+            da.docommand(s);
             da.disconnect();
         }
 
@@ -170,6 +166,6 @@ namespace Rohab
             return dt;
         }
 
-    
+
     }
 }

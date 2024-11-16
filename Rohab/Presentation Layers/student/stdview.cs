@@ -17,7 +17,7 @@ namespace Rohab
             InitializeComponent();
         }
 
-   private void stdview_Load(object sender, EventArgs e)
+        private void stdview_Load(object sender, EventArgs e)
         {
             System.Globalization.CultureInfo inp = new System.Globalization.CultureInfo(Localization.GetLocale());
             InputLanguage.CurrentInputLanguage = InputLanguage.FromCulture(inp);
@@ -126,29 +126,26 @@ namespace Rohab
             Boolean check = false;
 
             string SQL = "select stdno, reg_date,name,father,idno,job,degree,course,tel, mob,hesab, status,address,resume from std where ";
-            string SQL2 = "select * from std where ";
             check = false;
- 
-            
+
+
             if (txtstdname.Text != "")
             {
                 SQL = SQL + "name like N'%" + txtstdname.Text.Trim() + "%'AND ";
-                SQL2 = SQL2 + "name like N'%" + txtstdname.Text.Trim() + "%'AND ";
                 checkBox1.Checked = false;
                 check = true;
             }
-             if (checkBox1.Checked)
+            if (checkBox1.Checked)
             {
                 SQL = SQL + "(stdno in (select stdno from classes where payan_date is null OR payan_date=N''))AND ";
                 check = true;
             }
-            
-           
+
+
 
             if (check == true)
             {
                 SQL = SQL.Remove(SQL.Length - 4);
-                SQL2 = SQL2.Remove(SQL2.Length - 4);
             }
 
             std st = new std();
@@ -202,7 +199,7 @@ namespace Rohab
         {
             dataGridView1_CellDoubleClick(null, null);
         }
-        
+
         void dataGridView1_CellDoubleClick(object sender, System.Windows.Forms.DataGridViewCellEventArgs e)
         {
             cmdedit.PerformClick();
@@ -226,7 +223,7 @@ namespace Rohab
         }
 
         private void stdview_Shown(object sender, EventArgs e)
-        {  
+        {
             //std st = new std();
             //DataTable dt = new DataTable();
             //dt = st.SelectForView();
@@ -242,8 +239,8 @@ namespace Rohab
             //    cmdedit.Enabled = false;
             //}
 
-            string[] col_headers = { "شماره", "تاریخ ثبت نام", "نام و نام خانوادگی", "نام پدر", "شماره ملی", "شغل", "مدرک تحصیلی", "رشته تحصیلی", "تلفن منزل", "تلفن همراه","مانده حساب", "وضعیت حساب", "آدرس", "سوابق هنری" };
-            int[] col_width = { 50, 80, 130, 80, 90, 80, 80, 80, 80, 80,70,70, 120, 95 };
+            string[] col_headers = { "شماره", "تاریخ ثبت نام", "نام و نام خانوادگی", "نام پدر", "شماره ملی", "شغل", "مدرک تحصیلی", "رشته تحصیلی", "تلفن منزل", "تلفن همراه", "مانده حساب", "وضعیت حساب", "آدرس", "سوابق هنری" };
+            int[] col_width = { 50, 80, 130, 80, 90, 80, 80, 80, 80, 80, 70, 70, 120, 95 };
 
             for (int i = 0; i < col_headers.Length; i++)
             {
