@@ -147,19 +147,7 @@
             this.txtmonth.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.txtmonth.Font = new System.Drawing.Font("Tahoma", 8F);
             this.txtmonth.FormattingEnabled = true;
-            this.txtmonth.Items.AddRange(new object[] {
-            "فروردین",
-            "اردیبهشت",
-            "خرداد",
-            "تیر",
-            "مرداد",
-            "شهریور",
-            "مهر",
-            "آبان",
-            "آذر",
-            "دی",
-            "بهمن",
-            "اسفند"});
+            this.txtmonth.Items.AddRange(Localization.GetMonths());
             this.txtmonth.Location = new System.Drawing.Point(369, 19);
             this.txtmonth.Name = "txtmonth";
             this.txtmonth.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
