@@ -32,16 +32,8 @@ namespace MyControls
 
         protected override void OnLeave(EventArgs e)
         {
-            if (this.Text.Length == 11 || this.Text.Length == 0)
-            {
-                base.BackColor = Color.White;
-                base.OnLeave(e);
-            }
-            else
-            {
-                MessageBox.Show("لطفا شماره تلفن همراه را به صورت صحیح وارد نمایید");
-                this.Focus();
-            }
+            base.BackColor = Color.White;
+            base.OnLeave(e);
         }
 
 

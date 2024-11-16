@@ -1,4 +1,6 @@
-﻿namespace MyControls
+﻿using Rohab;
+
+namespace MyControls
 {
     partial class CellPhoneTextBox
     {
@@ -34,7 +36,7 @@
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Font = new System.Drawing.Font("Tahoma", 9F);
             this.ForeColor = System.Drawing.Color.Black;
-            this.Mask = "(0000)-000-0000";
+            //this.Mask = Localization.IsCountryIranOnLocale() ? "(0000)-000-0000" : "(000)-000-0000";
             //this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
         }

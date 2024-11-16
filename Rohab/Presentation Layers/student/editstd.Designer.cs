@@ -168,14 +168,17 @@
             // 
             this.txtbirthdate.BackColor = System.Drawing.Color.White;
             this.txtbirthdate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtbirthdate.Culture = new System.Globalization.CultureInfo("en-US");
             this.txtbirthdate.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txtbirthdate.ForeColor = System.Drawing.Color.Black;
             this.txtbirthdate.Location = new System.Drawing.Point(335, 274);
             this.txtbirthdate.Mask = "0000/00/00";
             this.txtbirthdate.Name = "txtbirthdate";
+            this.txtbirthdate.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtbirthdate.Size = new System.Drawing.Size(143, 22);
             this.txtbirthdate.TabIndex = 5;
             this.txtbirthdate.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtbirthdate.ValidatingType = typeof(System.DateTime);
             this.txtbirthdate.TextChanged += new System.EventHandler(this.addbtnTextChanged);
             // 
             // label13
@@ -194,15 +197,17 @@
             // 
             this.txtreg_date.BackColor = System.Drawing.Color.White;
             this.txtreg_date.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtreg_date.Culture = new System.Globalization.CultureInfo("en-US");
             this.txtreg_date.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txtreg_date.ForeColor = System.Drawing.Color.Black;
             this.txtreg_date.Location = new System.Drawing.Point(335, 160);
-            
+            this.txtreg_date.Mask = "0000/00/00";
             this.txtreg_date.Name = "txtreg_date";
             this.txtreg_date.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtreg_date.Size = new System.Drawing.Size(143, 22);
             this.txtreg_date.TabIndex = 1;
             this.txtreg_date.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtreg_date.ValidatingType = typeof(System.DateTime);
             this.txtreg_date.TextChanged += new System.EventHandler(this.addbtnTextChanged);
             // 
             // txtmob
@@ -212,7 +217,6 @@
             this.txtmob.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txtmob.ForeColor = System.Drawing.Color.Black;
             this.txtmob.Location = new System.Drawing.Point(16, 187);
-            this.txtmob.Mask = "(0000)-000-0000";
             this.txtmob.Name = "txtmob";
             this.txtmob.Size = new System.Drawing.Size(143, 22);
             this.txtmob.TabIndex = 7;

@@ -42,6 +42,7 @@ namespace Rohab
             this.btnMoveLast = new System.Windows.Forms.Button();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txtRecordPosition = new MyControls.NormalTextbox();
             this.btnMoveNext = new System.Windows.Forms.Button();
             this.btnMovePrevious = new System.Windows.Forms.Button();
             this.btnMoveFirst = new System.Windows.Forms.Button();
@@ -55,17 +56,17 @@ namespace Rohab
             this.picbtn = new System.Windows.Forms.Button();
             this.img_axbox = new System.Windows.Forms.PictureBox();
             this.grpinfo_box = new System.Windows.Forms.GroupBox();
+            this.txthesab = new MyControls.CurrencyTextBox();
             this.lbltooman2 = new System.Windows.Forms.Label();
             this.lblbemablagh = new System.Windows.Forms.Label();
-            this.lblvaziathesab = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txthesab = new MyControls.CurrencyTextBox();
             this.txtstatus = new MyControls.NormalCombobox();
+            this.lblvaziathesab = new System.Windows.Forms.Label();
             this.txtbirthdate = new MyControls.DateMaskedTextbox();
+            this.label13 = new System.Windows.Forms.Label();
             this.txtreg_date = new MyControls.DateMaskedTextbox();
             this.txtmob = new MyControls.CellPhoneTextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.txtstdno = new MyControls.FiveCharTextBox();
             this.txtname = new MyControls.NormalTextbox();
             this.txtresume = new MyControls.NormalTextbox();
@@ -76,7 +77,6 @@ namespace Rohab
             this.txtjob = new MyControls.NormalTextbox();
             this.txttel = new MyControls.NormalTextbox();
             this.txtaddress = new MyControls.NormalTextbox();
-            this.txtRecordPosition = new MyControls.NormalTextbox();
             this.groupBox2.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -225,6 +225,21 @@ namespace Rohab
             this.groupBox2.Size = new System.Drawing.Size(451, 118);
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
+            // 
+            // txtRecordPosition
+            // 
+            this.txtRecordPosition.BackColor = System.Drawing.Color.White;
+            this.txtRecordPosition.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtRecordPosition.Enabled = false;
+            this.txtRecordPosition.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.txtRecordPosition.ForeColor = System.Drawing.Color.Black;
+            this.txtRecordPosition.Location = new System.Drawing.Point(157, 83);
+            this.txtRecordPosition.Name = "txtRecordPosition";
+            this.txtRecordPosition.ReadOnly = true;
+            this.txtRecordPosition.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtRecordPosition.Size = new System.Drawing.Size(133, 22);
+            this.txtRecordPosition.TabIndex = 22;
+            this.txtRecordPosition.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // btnMoveNext
             // 
@@ -445,6 +460,25 @@ namespace Rohab
             this.grpinfo_box.TabIndex = 1;
             this.grpinfo_box.TabStop = false;
             // 
+            // txthesab
+            // 
+            this.txthesab.AcceptsReturn = true;
+            this.txthesab.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txthesab.BackColor = System.Drawing.Color.White;
+            this.txthesab.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txthesab.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txthesab.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.txthesab.ForeColor = System.Drawing.Color.Black;
+            this.txthesab.Location = new System.Drawing.Point(50, 344);
+            this.txthesab.MaxLength = 10;
+            this.txthesab.Name = "txthesab";
+            this.txthesab.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txthesab.Size = new System.Drawing.Size(109, 21);
+            this.txthesab.TabIndex = 12;
+            this.txthesab.Text = "0";
+            this.txthesab.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txthesab.TextChanged += new System.EventHandler(this.addbtnTextChanged);
+            // 
             // lbltooman2
             // 
             this.lbltooman2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -456,9 +490,9 @@ namespace Rohab
             this.lbltooman2.Location = new System.Drawing.Point(13, 346);
             this.lbltooman2.Name = "lbltooman2";
             this.lbltooman2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lbltooman2.Size = new System.Drawing.Size(31, 13);
+            this.lbltooman2.Size = new System.Drawing.Size(34, 13);
             this.lbltooman2.TabIndex = 147;
-            this.lbltooman2.Text = Localization.GetCurrencyUnit();
+            this.lbltooman2.Text = "Dollar";
             // 
             // lblbemablagh
             // 
@@ -472,6 +506,26 @@ namespace Rohab
             this.lblbemablagh.TabIndex = 146;
             this.lblbemablagh.Text = "به مبلغ";
             // 
+            // txtstatus
+            // 
+            this.txtstatus.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.txtstatus.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.txtstatus.BackColor = System.Drawing.Color.White;
+            this.txtstatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.txtstatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.txtstatus.Font = new System.Drawing.Font("Tahoma", 8F);
+            this.txtstatus.ForeColor = System.Drawing.Color.Black;
+            this.txtstatus.FormattingEnabled = true;
+            this.txtstatus.Items.AddRange(new object[] {
+            "بدهکار",
+            "بستانکار"});
+            this.txtstatus.Location = new System.Drawing.Point(16, 315);
+            this.txtstatus.Name = "txtstatus";
+            this.txtstatus.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtstatus.Size = new System.Drawing.Size(143, 21);
+            this.txtstatus.TabIndex = 11;
+            this.txtstatus.TextChanged += new System.EventHandler(this.addbtnTextChanged);
+            // 
             // lblvaziathesab
             // 
             this.lblvaziathesab.AutoSize = true;
@@ -484,6 +538,23 @@ namespace Rohab
             this.lblvaziathesab.TabIndex = 145;
             this.lblvaziathesab.Text = "وضعیت حساب اولیه";
             // 
+            // txtbirthdate
+            // 
+            this.txtbirthdate.BackColor = System.Drawing.Color.White;
+            this.txtbirthdate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtbirthdate.Culture = new System.Globalization.CultureInfo("en-US");
+            this.txtbirthdate.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.txtbirthdate.ForeColor = System.Drawing.Color.Black;
+            this.txtbirthdate.Location = new System.Drawing.Point(335, 315);
+            this.txtbirthdate.Mask = "0000/00/00";
+            this.txtbirthdate.Name = "txtbirthdate";
+            this.txtbirthdate.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtbirthdate.Size = new System.Drawing.Size(143, 22);
+            this.txtbirthdate.TabIndex = 5;
+            this.txtbirthdate.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtbirthdate.ValidatingType = typeof(System.DateTime);
+            this.txtbirthdate.TextChanged += new System.EventHandler(this.addbtnTextChanged);
+            // 
             // label13
             // 
             this.label13.AutoSize = true;
@@ -495,6 +566,37 @@ namespace Rohab
             this.label13.Size = new System.Drawing.Size(51, 14);
             this.label13.TabIndex = 143;
             this.label13.Text = "تاریخ تولد";
+            // 
+            // txtreg_date
+            // 
+            this.txtreg_date.BackColor = System.Drawing.Color.White;
+            this.txtreg_date.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtreg_date.Culture = new System.Globalization.CultureInfo("en-US");
+            this.txtreg_date.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.txtreg_date.ForeColor = System.Drawing.Color.Black;
+            this.txtreg_date.Location = new System.Drawing.Point(335, 198);
+            this.txtreg_date.Mask = "0000/00/00";
+            this.txtreg_date.Name = "txtreg_date";
+            this.txtreg_date.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtreg_date.Size = new System.Drawing.Size(143, 22);
+            this.txtreg_date.TabIndex = 1;
+            this.txtreg_date.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtreg_date.ValidatingType = typeof(System.DateTime);
+            this.txtreg_date.TextChanged += new System.EventHandler(this.addbtnTextChanged);
+            // 
+            // txtmob
+            // 
+            this.txtmob.BackColor = System.Drawing.Color.White;
+            this.txtmob.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtmob.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.txtmob.ForeColor = System.Drawing.Color.Black;
+            this.txtmob.Location = new System.Drawing.Point(16, 198);
+            this.txtmob.Name = "txtmob";
+            this.txtmob.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtmob.Size = new System.Drawing.Size(143, 22);
+            this.txtmob.TabIndex = 7;
+            this.txtmob.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtmob.TextChanged += new System.EventHandler(this.addbtnTextChanged);
             // 
             // label8
             // 
@@ -519,88 +621,6 @@ namespace Rohab
             this.label3.Size = new System.Drawing.Size(69, 14);
             this.label3.TabIndex = 139;
             this.label3.Text = "تاریخ ثبت نام";
-            // 
-            // txthesab
-            // 
-            this.txthesab.AcceptsReturn = true;
-            this.txthesab.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txthesab.BackColor = System.Drawing.Color.White;
-            this.txthesab.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txthesab.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txthesab.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.txthesab.ForeColor = System.Drawing.Color.Black;
-            this.txthesab.Location = new System.Drawing.Point(50, 344);
-            this.txthesab.MaxLength = 10;
-            this.txthesab.Name = "txthesab";
-            this.txthesab.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txthesab.Size = new System.Drawing.Size(109, 21);
-            this.txthesab.TabIndex = 12;
-            this.txthesab.Text = "0";
-            this.txthesab.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txthesab.TextChanged += new System.EventHandler(this.addbtnTextChanged);
-            // 
-            // txtstatus
-            // 
-            this.txtstatus.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.txtstatus.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.txtstatus.BackColor = System.Drawing.Color.White;
-            this.txtstatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.txtstatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.txtstatus.Font = new System.Drawing.Font("Tahoma", 8F);
-            this.txtstatus.ForeColor = System.Drawing.Color.Black;
-            this.txtstatus.FormattingEnabled = true;
-            this.txtstatus.Items.AddRange(new object[] {
-            "بدهکار",
-            "بستانکار"});
-            this.txtstatus.Location = new System.Drawing.Point(16, 315);
-            this.txtstatus.Name = "txtstatus";
-            this.txtstatus.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtstatus.Size = new System.Drawing.Size(143, 21);
-            this.txtstatus.TabIndex = 11;
-            this.txtstatus.TextChanged += new System.EventHandler(this.addbtnTextChanged);
-            // 
-            // txtbirthdate
-            // 
-            this.txtbirthdate.BackColor = System.Drawing.Color.White;
-            this.txtbirthdate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtbirthdate.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.txtbirthdate.ForeColor = System.Drawing.Color.Black;
-            this.txtbirthdate.Location = new System.Drawing.Point(335, 315);
-            this.txtbirthdate.Mask = "0000/00/00";
-            this.txtbirthdate.Name = "txtbirthdate";
-            this.txtbirthdate.Size = new System.Drawing.Size(143, 22);
-            this.txtbirthdate.TabIndex = 5;
-            this.txtbirthdate.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtbirthdate.TextChanged += new System.EventHandler(this.addbtnTextChanged);
-            // 
-            // txtreg_date
-            // 
-            this.txtreg_date.BackColor = System.Drawing.Color.White;
-            this.txtreg_date.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtreg_date.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.txtreg_date.ForeColor = System.Drawing.Color.Black;
-            this.txtreg_date.Location = new System.Drawing.Point(335, 198);
-            
-            this.txtreg_date.Name = "txtreg_date";
-            this.txtreg_date.Size = new System.Drawing.Size(143, 22);
-            this.txtreg_date.TabIndex = 1;
-            this.txtreg_date.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtreg_date.TextChanged += new System.EventHandler(this.addbtnTextChanged);
-            // 
-            // txtmob
-            // 
-            this.txtmob.BackColor = System.Drawing.Color.White;
-            this.txtmob.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtmob.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.txtmob.ForeColor = System.Drawing.Color.Black;
-            this.txtmob.Location = new System.Drawing.Point(16, 198);
-            this.txtmob.Mask = "(0000) 000-0000";
-            this.txtmob.Name = "txtmob";
-            this.txtmob.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtmob.Size = new System.Drawing.Size(143, 22);
-            this.txtmob.TabIndex = 7;
-            this.txtmob.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtmob.TextChanged += new System.EventHandler(this.addbtnTextChanged);
             // 
             // txtstdno
             // 
@@ -766,21 +786,6 @@ namespace Rohab
             this.txtaddress.Size = new System.Drawing.Size(462, 22);
             this.txtaddress.TabIndex = 13;
             this.txtaddress.TextChanged += new System.EventHandler(this.addbtnTextChanged);
-            // 
-            // txtRecordPosition
-            // 
-            this.txtRecordPosition.BackColor = System.Drawing.Color.White;
-            this.txtRecordPosition.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtRecordPosition.Enabled = false;
-            this.txtRecordPosition.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.txtRecordPosition.ForeColor = System.Drawing.Color.Black;
-            this.txtRecordPosition.Location = new System.Drawing.Point(157, 83);
-            this.txtRecordPosition.Name = "txtRecordPosition";
-            this.txtRecordPosition.ReadOnly = true;
-            this.txtRecordPosition.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtRecordPosition.Size = new System.Drawing.Size(133, 22);
-            this.txtRecordPosition.TabIndex = 22;
-            this.txtRecordPosition.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // addstd
             // 
