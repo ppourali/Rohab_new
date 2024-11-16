@@ -114,7 +114,7 @@ namespace Rohab
 
         private void addteacher_Load(object sender, EventArgs e)
         {
-            System.Globalization.CultureInfo inp = new System.Globalization.CultureInfo("fa-IR");
+            System.Globalization.CultureInfo inp = new System.Globalization.CultureInfo(Localization.GetLocale());
             InputLanguage.CurrentInputLanguage = InputLanguage.FromCulture(inp);
 
 

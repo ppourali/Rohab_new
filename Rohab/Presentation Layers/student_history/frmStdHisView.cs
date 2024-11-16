@@ -25,7 +25,7 @@ namespace Rohab
             txtstdno.Focus();
             txtstdno.SelectAll();
 
-            System.Globalization.CultureInfo inp = new System.Globalization.CultureInfo("fa-IR");
+            System.Globalization.CultureInfo inp = new System.Globalization.CultureInfo(Localization.GetLocale());
             InputLanguage.CurrentInputLanguage = InputLanguage.FromCulture(inp);
 
             dataGridView1.AutoGenerateColumns = true;

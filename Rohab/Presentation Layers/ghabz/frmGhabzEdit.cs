@@ -26,7 +26,7 @@ namespace Rohab
         {
             txtlastcheck.Items.AddRange(Localization.GetMonths());
 
-            System.Globalization.CultureInfo inp = new System.Globalization.CultureInfo("fa-IR");
+            System.Globalization.CultureInfo inp = new System.Globalization.CultureInfo(Localization.GetLocale());
             InputLanguage.CurrentInputLanguage = InputLanguage.FromCulture(inp);
             cur_date = Localization.currentDate_Getter();
 

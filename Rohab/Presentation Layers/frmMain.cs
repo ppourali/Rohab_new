@@ -243,11 +243,14 @@ namespace Rohab
                 frl.ShowDialog();
             }
 
-            InputLanguage lang = GetFarsiLanguage();
-            if (lang == null)
-                MessageBox.Show("تنظیمات صفجه کلید ویندوز فاقد کیبورد فارسی می باشد، برای کسب اطالاعات بیشتر با پشتیبانی تماس بگیرید");
+            if (Localization.IsCountryIranOnLocale())
+            {
+                InputLanguage lang = GetFarsiLanguage();
+                if (lang == null)
+                    MessageBox.Show("تنظیمات صفجه کلید ویندوز فاقد کیبورد فارسی می باشد، برای کسب اطالاعات بیشتر با پشتیبانی تماس بگیرید");
 
-            InputLanguage.CurrentInputLanguage = lang;
+                InputLanguage.CurrentInputLanguage = lang;
+            }
             Timer1.Start();
             backgroundWorker1.RunWorkerAsync();
         }

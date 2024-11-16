@@ -91,7 +91,6 @@
     <Compile Include="Business Layers\ghabz.cs" />
     <Compile Include="Business Layers\sms.cs" />
     <Compile Include="Business Layers\std_history.cs" />
-    <Compile Include="CurrencyLocalization.cs" />
     <Compile Include="Localization.cs" />
     <Compile Include="MyControls\CellPhoneTextBox.cs">
       <SubType>Component</SubType>

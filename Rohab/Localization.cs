@@ -8,7 +8,7 @@ namespace Rohab
 {
     public static class Localization
     {
-        static bool isShamsi = GetCountryBasedOnLocale();
+        static bool isShamsi = IsCountryIranOnLocale();
         private static string currentDate;
         private static string currentDateShamsi;
 
@@ -263,7 +263,7 @@ namespace Rohab
             "August", "October", "November", "December"}; }
         }
 
-        private static bool GetCountryBasedOnLocale()
+        public static bool IsCountryIranOnLocale()
         {
             var currentCulture = CultureInfo.CurrentCulture;
             var region = currentCulture.Name; // E.g., "en-CA" for Canada, "fa-IR" for Iran
@@ -275,6 +275,21 @@ namespace Rohab
             else
             {
                 return false;
+            }
+        }
+
+        public static string GetLocale()
+        {
+            var currentCulture = CultureInfo.CurrentCulture;
+            var region = currentCulture.Name; // E.g., "en-CA" for Canada, "fa-IR" for Iran
+
+            if (region.StartsWith("fa-IR"))
+            {
+                return "fa-IR";
+            }
+            else
+            {
+                return "en-CA";
             }
         }
     }
