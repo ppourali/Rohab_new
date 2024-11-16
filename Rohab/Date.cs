@@ -8,20 +8,32 @@ namespace Rohab
 {
     public static class Date
     {
+        static bool isShamsi = false;
         private static string currentDate;
+        private static string currentDateShamsi;
 
-        public static void currentDate_Setter()
+
+        public static void currentDate_Setter(bool isShamsi)
         {
-             string d, m, y;
+            string d, m, y;
             d = DateTime.Today.Date.Day.ToString();
             m = DateTime.Today.Date.Month.ToString();
             y = DateTime.Today.Date.Year.ToString();
-            currentDate = Shamsi(y + '/' + m + '/' + d);
+            currentDateShamsi = Shamsi(y + '/' + m + '/' + d);
+            currentDate = y + '/' + m + '/' + d;
+
         }
 
         public static string currentDate_Getter()
         {
-            return currentDate;
+            if (isShamsi)
+            {
+                return currentDateShamsi;
+            }
+            else
+            {
+                return currentDate;
+            }
         }
 
         public static string Shamsi(string date)
@@ -62,7 +74,7 @@ namespace Rohab
             if (month <= 0) month += 12;
             return year + "/" + Convert.ToString(month).PadLeft(2, '0') + "/" +
             Convert.ToString(day).PadLeft(2, '0');
-       }
+        }
 
         public static string Shamsiwithtime(DateTime dateTime)
         {
@@ -126,12 +138,16 @@ namespace Rohab
         public static int returnYearOfInputDate(string inputDate)
         {
             if (inputDate.Trim().Length < 10)
-                return 1400;
+            {
+                if (isShamsi)
+                { return 1400; }
+                else { return 2000; }
+            }
 
             int yearNo = int.Parse(inputDate.Substring(0, 4));
             return yearNo;
         }
- 
+
         public static int returnMonthOfInputDate(string inputDate)
         {
             if (inputDate.Trim().Length < 10)
@@ -140,7 +156,7 @@ namespace Rohab
             int monthNo = int.Parse(inputDate.Substring(5, 2));
             return monthNo;
         }
-        
+
         public static int returnDayOfInputDate(string inputDate)
         {
             int dayNo = int.Parse(inputDate.Substring(8, 2));
@@ -152,16 +168,33 @@ namespace Rohab
             if (inputDate.Trim().Length < 10)
                 return "";
 
-            string lastYear= inputDate.Substring(0, 4);
+            string lastYear = inputDate.Substring(0, 4);
             string lastMonth = inputDate.Substring(5, 2);
             string lastDay = "";
-
-            if (int.Parse( lastMonth)>= 1 && int.Parse(lastMonth)<=6)
-                lastDay = lastDay + "/31";
+            if (isShamsi)
+            {
+                if (int.Parse(lastMonth) >= 1 && int.Parse(lastMonth) <= 6)
+                    lastDay = lastDay + "/31";
+                else
+                    lastDay = lastDay + "/30";
+            }
             else
-                lastDay = lastDay + "/30";
+            {
+                if (int.Parse(lastMonth) == 1 || int.Parse(lastMonth) == 3 || int.Parse(lastMonth) == 5 || int.Parse(lastMonth) == 7 || int.Parse(lastMonth) == 8 || int.Parse(lastMonth) == 10 || int.Parse(lastMonth) == 12)
+                {
+                    lastDay = lastDay + "/31";
+                }
+                else if (int.Parse(lastMonth) == 2)
+                {
+                    lastDay = lastDay + "/29";
+                }
+                else
+                {
+                    lastDay = lastDay + "/30";
+                }
+            }
 
-            return lastYear+lastMonth+lastDay;
+            return lastYear + lastMonth + lastDay;
         }
 
         public static string returnLastDateOfaDate(string inputDate, int monthIndex)
@@ -170,10 +203,28 @@ namespace Rohab
             string lastMonth = (monthIndex + 1).ToString("00");
             string lastDay = "";
 
-            if (int.Parse(lastMonth) >= 1 && int.Parse(lastMonth) <= 6)
-                lastDay = lastDay + "/31";
+            if (isShamsi)
+            {
+                if (int.Parse(lastMonth) >= 1 && int.Parse(lastMonth) <= 6)
+                    lastDay = lastDay + "/31";
+                else
+                    lastDay = lastDay + "/30";
+            }
             else
-                lastDay = lastDay + "/30";
+            {
+                if (int.Parse(lastMonth) == 1 || int.Parse(lastMonth) == 3 || int.Parse(lastMonth) == 5 || int.Parse(lastMonth) == 7 || int.Parse(lastMonth) == 8 || int.Parse(lastMonth) == 10 || int.Parse(lastMonth) == 12)
+                {
+                    lastDay = lastDay + "/31";
+                }
+                else if (int.Parse(lastMonth) == 2)
+                {
+                    lastDay = lastDay + "/29";
+                }
+                else
+                {
+                    lastDay = lastDay + "/30";
+                }
+            }
 
             return lastYear + lastMonth + lastDay;
         }
