@@ -519,7 +519,7 @@
         <ValueAxis>
           <Axis>
             <Title>
-              <Caption>تومان</Caption>
+              <Caption>(واحد پولی)</Caption>
               <Style>
                 <FontFamily>b lotus</FontFamily>
               </Style>

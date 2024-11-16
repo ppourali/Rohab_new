@@ -246,7 +246,7 @@
             <CanGrow>true</CanGrow>
             <Left>0.75cm</Left>
             <Height>3.25001cm</Height>
-            <Value>=" مبلغ "+FormatNumber(Fields!mablagh.Value,0)+" تومان به اینجانب، "+Fields!name.Value.ToString()+" از طرف آموزشگاه موسیقی "+Fields!name.Value.ToString()+" بابت حقوق "+Fields!paidformonth.Value.ToString()+" ماه پرداخت گردیده است. "</Value>
+            <Value>=" مبلغ "+FormatNumber(Fields!mablagh.Value,0)+" (واحد پولی) به اینجانب، "+Fields!name.Value.ToString()+" از طرف آموزشگاه موسیقی "+Fields!name.Value.ToString()+" بابت حقوق "+Fields!paidformonth.Value.ToString()+" ماه پرداخت گردیده است. "</Value>
           </Textbox>
           <Textbox Name="textbox13">
             <Top>5.50001cm</Top>
@@ -643,7 +643,7 @@
             <CanGrow>true</CanGrow>
             <Left>0.75cm</Left>
             <Height>3.25001cm</Height>
-            <Value>=" مبلغ "+FormatNumber(Fields!mablagh.Value,0)+" تومان به اینجانب، "+Fields!name.Value.ToString()+" از طرف آموزشگاه موسیقی "+Fields!name.Value.ToString()+" بابت حقوق "+Fields!paidformonth.Value.ToString()+" ماه پرداخت گردیده است. "</Value>
+            <Value>=" مبلغ "+FormatNumber(Fields!mablagh.Value,0)+" (واحد پولی) به اینجانب، "+Fields!name.Value.ToString()+" از طرف آموزشگاه موسیقی "+Fields!name.Value.ToString()+" بابت حقوق "+Fields!paidformonth.Value.ToString()+" ماه پرداخت گردیده است. "</Value>
           </Textbox>
           <Textbox Name="textbox33">
             <Top>5.50001cm</Top>

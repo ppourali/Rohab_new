@@ -203,11 +203,11 @@ namespace Rohab
         {
             if (long.Parse(txtmablagh.Text) < long.Parse(txtpaid.Text))
             {
-                label10.Text = "تومان بستانکار";
+                label10.Text = " بستانکار";
             }
             else
             {
-                label10.Text = "تومان بدهکار";
+                label10.Text = " بدهکار";
             }
         }
 

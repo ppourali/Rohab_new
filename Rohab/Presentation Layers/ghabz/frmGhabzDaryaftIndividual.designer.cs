@@ -143,7 +143,7 @@ namespace Rohab
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(82, 13);
             this.label10.TabIndex = 160;
-            this.label10.Text = "تومان ";
+            this.label10.Text = CurrencyLocalization.GetCurrencyUnit();
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtmandeh
@@ -214,7 +214,7 @@ namespace Rohab
             this.label5.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label5.Size = new System.Drawing.Size(31, 13);
             this.label5.TabIndex = 157;
-            this.label5.Text = "تومان";
+            this.label5.Text = CurrencyLocalization.GetCurrencyUnit();
             // 
             // label7
             // 
@@ -410,7 +410,7 @@ namespace Rohab
             this.label2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label2.Size = new System.Drawing.Size(31, 13);
             this.label2.TabIndex = 83;
-            this.label2.Text = "تومان";
+            this.label2.Text = CurrencyLocalization.GetCurrencyUnit();
             // 
             // txtsharh
             // 
