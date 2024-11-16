@@ -33,6 +33,8 @@ namespace Rohab
             this.btnexit = new System.Windows.Forms.Button();
             this.btntaeed = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtpaidformonth = new MyControls.NormalCombobox();
             this.txtmablagh = new MyControls.CurrencyTextBox();
             this.txtname = new MyControls.NormalCombobox();
             this.label2 = new System.Windows.Forms.Label();
@@ -44,8 +46,6 @@ namespace Rohab
             this.txtid = new MyControls.FiveCharTextBox();
             this.label22 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtpaidformonth = new MyControls.NormalCombobox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -106,6 +106,40 @@ namespace Rohab
             this.groupBox1.Size = new System.Drawing.Size(511, 138);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label1.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(183, 52);
+            this.label1.Name = "label1";
+            this.label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label1.Size = new System.Drawing.Size(53, 13);
+            this.label1.TabIndex = 135;
+            this.label1.Text = "تسویه ماه";
+            // 
+            // txtpaidformonth
+            // 
+            this.txtpaidformonth.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.txtpaidformonth.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.txtpaidformonth.BackColor = System.Drawing.Color.White;
+            this.txtpaidformonth.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.txtpaidformonth.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.txtpaidformonth.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.txtpaidformonth.ForeColor = System.Drawing.Color.Black;
+            this.txtpaidformonth.FormattingEnabled = true;
+            this.txtpaidformonth.Location = new System.Drawing.Point(26, 50);
+            this.txtpaidformonth.MaxLength = 30;
+            this.txtpaidformonth.Name = "txtpaidformonth";
+            this.txtpaidformonth.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtpaidformonth.Size = new System.Drawing.Size(151, 22);
+            this.txtpaidformonth.TabIndex = 2;
+            this.txtpaidformonth.SelectedIndexChanged += new System.EventHandler(this.TextChanged_Action);
+            this.txtpaidformonth.TextUpdate += new System.EventHandler(this.TextChanged_Action);
             // 
             // txtmablagh
             // 
@@ -206,7 +240,7 @@ namespace Rohab
             this.txtdate.ForeColor = System.Drawing.Color.Black;
             this.txtdate.Location = new System.Drawing.Point(280, 48);
             this.txtdate.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            
+            this.txtdate.Mask = "0000/00/00";
             this.txtdate.Name = "txtdate";
             this.txtdate.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtdate.Size = new System.Drawing.Size(151, 22);
@@ -293,53 +327,6 @@ namespace Rohab
             this.label12.Size = new System.Drawing.Size(55, 13);
             this.label12.TabIndex = 72;
             this.label12.Text = "تاریخ صدور";
-            // 
-            // label1
-            // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(183, 52);
-            this.label1.Name = "label1";
-            this.label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label1.Size = new System.Drawing.Size(53, 13);
-            this.label1.TabIndex = 135;
-            this.label1.Text = "تسویه ماه";
-            // 
-            // txtpaidformonth
-            // 
-            this.txtpaidformonth.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.txtpaidformonth.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.txtpaidformonth.BackColor = System.Drawing.Color.White;
-            this.txtpaidformonth.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.txtpaidformonth.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.txtpaidformonth.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.txtpaidformonth.ForeColor = System.Drawing.Color.Black;
-            this.txtpaidformonth.FormattingEnabled = true;
-            this.txtpaidformonth.Items.AddRange(new object[] {
-            "فروردین",
-            "اردیبهشت",
-            "خرداد",
-            "تیر",
-            "مرداد",
-            "شهریور",
-            "مهر",
-            "آبان",
-            "آذر",
-            "دی",
-            "بهمن",
-            "اسفند"});
-            this.txtpaidformonth.Location = new System.Drawing.Point(26, 50);
-            this.txtpaidformonth.MaxLength = 30;
-            this.txtpaidformonth.Name = "txtpaidformonth";
-            this.txtpaidformonth.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtpaidformonth.Size = new System.Drawing.Size(151, 22);
-            this.txtpaidformonth.TabIndex = 2;
-            this.txtpaidformonth.SelectedIndexChanged += new System.EventHandler(this.TextChanged_Action);
-            this.txtpaidformonth.TextUpdate += new System.EventHandler(this.TextChanged_Action);
             // 
             // frmGhabzPardakht
             // 

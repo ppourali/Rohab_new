@@ -24,7 +24,8 @@ namespace Rohab
 
         private void frmGhabzEdit_Load(object sender, EventArgs e)
         {
-            
+            txtlastcheck.Items.AddRange(Date.GetMonths());
+
             System.Globalization.CultureInfo inp = new System.Globalization.CultureInfo("fa-IR");
             InputLanguage.CurrentInputLanguage = InputLanguage.FromCulture(inp);
             cur_date = Date.currentDate_Getter();

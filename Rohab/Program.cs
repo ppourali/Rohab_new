@@ -53,7 +53,7 @@ namespace Rohab
             {
                 dt = SH.Select();
 
-                Date.currentDate_Setter(false);
+                Date.currentDate_Setter();
             }
 
             if (dt.Rows.Count == 0)

@@ -27,6 +27,9 @@ namespace Rohab
             cur_date = Date.currentDate_Getter();
             newform();
 
+            txtpaidformonth.Items.AddRange(Date.GetMonths());
+
+
             teachers te = new teachers();
             DataTable dttename = new DataTable();
             dttename = te.Search("SELECT name FROM teachers order by name");

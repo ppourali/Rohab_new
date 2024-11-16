@@ -34,31 +34,31 @@ namespace Rohab
             this.btnUpdate = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label10 = new System.Windows.Forms.Label();
+            this.txtmandeh = new MyControls.CurrencyTextBox();
             this.label11 = new System.Windows.Forms.Label();
+            this.txtpaid = new MyControls.CurrencyTextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.btnsabegheh = new System.Windows.Forms.Button();
-            this.txtmandeh = new MyControls.CurrencyTextBox();
-            this.txtpaid = new MyControls.CurrencyTextBox();
             this.txtstdno = new MyControls.NormalTextbox();
+            this.label1 = new System.Windows.Forms.Label();
             this.txtlastdate = new MyControls.DateMaskedTextbox();
             this.txtlastcheck = new MyControls.NormalCombobox();
             this.txtmablagh = new MyControls.CurrencyTextBox();
             this.txtartcourse = new MyControls.NormalCombobox();
+            this.label16 = new System.Windows.Forms.Label();
             this.txtname = new MyControls.NormalCombobox();
+            this.label2 = new System.Windows.Forms.Label();
             this.txtsharh = new MyControls.NormalTextbox();
+            this.label8 = new System.Windows.Forms.Label();
             this.txtdate = new MyControls.DateMaskedTextbox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.txtid = new MyControls.FiveCharTextBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.btnsabegheh = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -146,6 +146,27 @@ namespace Rohab
             this.label10.Text = "تومان ";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // txtmandeh
+            // 
+            this.txtmandeh.AcceptsReturn = true;
+            this.txtmandeh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtmandeh.BackColor = System.Drawing.Color.LightGray;
+            this.txtmandeh.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtmandeh.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtmandeh.Enabled = false;
+            this.txtmandeh.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.txtmandeh.ForeColor = System.Drawing.Color.Black;
+            this.txtmandeh.Location = new System.Drawing.Point(99, 131);
+            this.txtmandeh.MaxLength = 10;
+            this.txtmandeh.Name = "txtmandeh";
+            this.txtmandeh.ReadOnly = true;
+            this.txtmandeh.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtmandeh.Size = new System.Drawing.Size(81, 21);
+            this.txtmandeh.TabIndex = 9;
+            this.txtmandeh.Text = "0";
+            this.txtmandeh.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtmandeh.TextChanged += new System.EventHandler(this.txtmandeh_TextChanged);
+            // 
             // label11
             // 
             this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -160,6 +181,25 @@ namespace Rohab
             this.label11.Size = new System.Drawing.Size(65, 13);
             this.label11.TabIndex = 159;
             this.label11.Text = "مانده از قبض";
+            // 
+            // txtpaid
+            // 
+            this.txtpaid.AcceptsReturn = true;
+            this.txtpaid.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtpaid.BackColor = System.Drawing.Color.White;
+            this.txtpaid.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtpaid.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtpaid.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.txtpaid.ForeColor = System.Drawing.Color.Black;
+            this.txtpaid.Location = new System.Drawing.Point(56, 104);
+            this.txtpaid.MaxLength = 10;
+            this.txtpaid.Name = "txtpaid";
+            this.txtpaid.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtpaid.Size = new System.Drawing.Size(124, 21);
+            this.txtpaid.TabIndex = 8;
+            this.txtpaid.Text = "0";
+            this.txtpaid.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtpaid.TextChanged += new System.EventHandler(this.TextChanged_Action);
             // 
             // label5
             // 
@@ -218,6 +258,24 @@ namespace Rohab
             this.label3.TabIndex = 134;
             this.label3.Text = "تسویه لغایت";
             // 
+            // txtstdno
+            // 
+            this.txtstdno.BackColor = System.Drawing.Color.White;
+            this.txtstdno.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtstdno.Enabled = false;
+            this.txtstdno.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.txtstdno.ForeColor = System.Drawing.Color.Black;
+            this.txtstdno.Location = new System.Drawing.Point(292, 74);
+            this.txtstdno.MaxLength = 50;
+            this.txtstdno.Name = "txtstdno";
+            this.txtstdno.ReadOnly = true;
+            this.txtstdno.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtstdno.Size = new System.Drawing.Size(151, 22);
+            this.txtstdno.TabIndex = 2;
+            this.txtstdno.TabStop = false;
+            this.txtstdno.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtstdno.TextChanged += new System.EventHandler(this.TextChanged_Action);
+            // 
             // label1
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -233,6 +291,80 @@ namespace Rohab
             this.label1.TabIndex = 133;
             this.label1.Text = "تسویه ماه";
             // 
+            // txtlastdate
+            // 
+            this.txtlastdate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtlastdate.BackColor = System.Drawing.Color.Gainsboro;
+            this.txtlastdate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtlastdate.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.txtlastdate.ForeColor = System.Drawing.Color.Black;
+            this.txtlastdate.Location = new System.Drawing.Point(29, 47);
+            this.txtlastdate.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtlastdate.Mask = "0000/00/00";
+            this.txtlastdate.Name = "txtlastdate";
+            this.txtlastdate.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtlastdate.Size = new System.Drawing.Size(151, 22);
+            this.txtlastdate.TabIndex = 6;
+            this.txtlastdate.TabStop = false;
+            this.txtlastdate.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtlastdate.TextChanged += new System.EventHandler(this.TextChanged_Action);
+            // 
+            // txtlastcheck
+            // 
+            this.txtlastcheck.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.txtlastcheck.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.txtlastcheck.BackColor = System.Drawing.Color.White;
+            this.txtlastcheck.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.txtlastcheck.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.txtlastcheck.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.txtlastcheck.ForeColor = System.Drawing.Color.Black;
+            this.txtlastcheck.FormattingEnabled = true;
+            this.txtlastcheck.Location = new System.Drawing.Point(29, 18);
+            this.txtlastcheck.MaxLength = 30;
+            this.txtlastcheck.Name = "txtlastcheck";
+            this.txtlastcheck.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtlastcheck.Size = new System.Drawing.Size(151, 22);
+            this.txtlastcheck.TabIndex = 5;
+            this.txtlastcheck.SelectedIndexChanged += new System.EventHandler(this.txtlastcheck_SelectedIndexChanged);
+            this.txtlastcheck.TextChanged += new System.EventHandler(this.TextChanged_Action);
+            // 
+            // txtmablagh
+            // 
+            this.txtmablagh.AcceptsReturn = true;
+            this.txtmablagh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtmablagh.BackColor = System.Drawing.Color.White;
+            this.txtmablagh.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtmablagh.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtmablagh.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.txtmablagh.ForeColor = System.Drawing.Color.Black;
+            this.txtmablagh.Location = new System.Drawing.Point(56, 76);
+            this.txtmablagh.MaxLength = 10;
+            this.txtmablagh.Name = "txtmablagh";
+            this.txtmablagh.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtmablagh.Size = new System.Drawing.Size(124, 21);
+            this.txtmablagh.TabIndex = 7;
+            this.txtmablagh.Text = "0";
+            this.txtmablagh.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtmablagh.TextChanged += new System.EventHandler(this.TextChanged_Action);
+            // 
+            // txtartcourse
+            // 
+            this.txtartcourse.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.txtartcourse.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.txtartcourse.BackColor = System.Drawing.Color.White;
+            this.txtartcourse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.txtartcourse.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.txtartcourse.ForeColor = System.Drawing.Color.Black;
+            this.txtartcourse.FormattingEnabled = true;
+            this.txtartcourse.Location = new System.Drawing.Point(292, 104);
+            this.txtartcourse.Name = "txtartcourse";
+            this.txtartcourse.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtartcourse.Size = new System.Drawing.Size(151, 22);
+            this.txtartcourse.TabIndex = 3;
+            this.txtartcourse.SelectedIndexChanged += new System.EventHandler(this.TextChanged_Action);
+            this.txtartcourse.TextChanged += new System.EventHandler(this.TextChanged_Action);
+            this.txtartcourse.Enter += new System.EventHandler(this.txtartcourse_Enter);
+            // 
             // label16
             // 
             this.label16.AutoSize = true;
@@ -244,6 +376,24 @@ namespace Rohab
             this.label16.Size = new System.Drawing.Size(55, 13);
             this.label16.TabIndex = 129;
             this.label16.Text = "بابت کلاس";
+            // 
+            // txtname
+            // 
+            this.txtname.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtname.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.txtname.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.txtname.BackColor = System.Drawing.Color.White;
+            this.txtname.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.txtname.Font = new System.Drawing.Font("Tahoma", 8F);
+            this.txtname.ForeColor = System.Drawing.Color.Black;
+            this.txtname.FormattingEnabled = true;
+            this.txtname.Location = new System.Drawing.Point(292, 47);
+            this.txtname.Name = "txtname";
+            this.txtname.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtname.Size = new System.Drawing.Size(151, 21);
+            this.txtname.TabIndex = 1;
+            this.txtname.SelectedIndexChanged += new System.EventHandler(this.TextChanged_Action);
+            this.txtname.TextChanged += new System.EventHandler(this.TextChanged_Action);
             // 
             // label2
             // 
@@ -260,6 +410,29 @@ namespace Rohab
             this.label2.TabIndex = 83;
             this.label2.Text = "تومان";
             // 
+            // txtsharh
+            // 
+            this.txtsharh.AcceptsReturn = true;
+            this.txtsharh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtsharh.AutoCompleteCustomSource.AddRange(new string[] {
+            "کارت",
+            "نقد"});
+            this.txtsharh.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.txtsharh.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.txtsharh.BackColor = System.Drawing.Color.White;
+            this.txtsharh.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtsharh.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtsharh.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.txtsharh.ForeColor = System.Drawing.Color.Black;
+            this.txtsharh.Location = new System.Drawing.Point(29, 161);
+            this.txtsharh.MaxLength = 100;
+            this.txtsharh.Name = "txtsharh";
+            this.txtsharh.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtsharh.Size = new System.Drawing.Size(414, 21);
+            this.txtsharh.TabIndex = 10;
+            this.txtsharh.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtsharh.TextChanged += new System.EventHandler(this.TextChanged_Action);
+            // 
             // label8
             // 
             this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -274,6 +447,23 @@ namespace Rohab
             this.label8.Size = new System.Drawing.Size(47, 13);
             this.label8.TabIndex = 80;
             this.label8.Text = "توضیحات";
+            // 
+            // txtdate
+            // 
+            this.txtdate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtdate.BackColor = System.Drawing.Color.White;
+            this.txtdate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtdate.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.txtdate.ForeColor = System.Drawing.Color.Black;
+            this.txtdate.Location = new System.Drawing.Point(292, 132);
+            this.txtdate.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtdate.Mask = "0000/00/00";
+            this.txtdate.Name = "txtdate";
+            this.txtdate.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtdate.Size = new System.Drawing.Size(151, 22);
+            this.txtdate.TabIndex = 4;
+            this.txtdate.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtdate.TextChanged += new System.EventHandler(this.TextChanged_Action);
             // 
             // label9
             // 
@@ -304,6 +494,27 @@ namespace Rohab
             this.label6.Size = new System.Drawing.Size(62, 13);
             this.label6.TabIndex = 76;
             this.label6.Text = "شماره قبض";
+            // 
+            // txtid
+            // 
+            this.txtid.AcceptsReturn = true;
+            this.txtid.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtid.BackColor = System.Drawing.Color.White;
+            this.txtid.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtid.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtid.Enabled = false;
+            this.txtid.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.txtid.ForeColor = System.Drawing.Color.Black;
+            this.txtid.Location = new System.Drawing.Point(292, 20);
+            this.txtid.MaxLength = 10;
+            this.txtid.Name = "txtid";
+            this.txtid.ReadOnly = true;
+            this.txtid.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtid.Size = new System.Drawing.Size(151, 21);
+            this.txtid.TabIndex = 0;
+            this.txtid.TabStop = false;
+            this.txtid.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtid.TextChanged += new System.EventHandler(this.TextChanged_Action);
             // 
             // label22
             // 
@@ -353,228 +564,6 @@ namespace Rohab
             this.btnsabegheh.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnsabegheh.UseVisualStyleBackColor = true;
             this.btnsabegheh.Click += new System.EventHandler(this.btnsabegheh_Click);
-            // 
-            // txtmandeh
-            // 
-            this.txtmandeh.AcceptsReturn = true;
-            this.txtmandeh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtmandeh.BackColor = System.Drawing.Color.LightGray;
-            this.txtmandeh.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtmandeh.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtmandeh.Enabled = false;
-            this.txtmandeh.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.txtmandeh.ForeColor = System.Drawing.Color.Black;
-            this.txtmandeh.Location = new System.Drawing.Point(99, 131);
-            this.txtmandeh.MaxLength = 10;
-            this.txtmandeh.Name = "txtmandeh";
-            this.txtmandeh.ReadOnly = true;
-            this.txtmandeh.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtmandeh.Size = new System.Drawing.Size(81, 21);
-            this.txtmandeh.TabIndex = 9;
-            this.txtmandeh.Text = "0";
-            this.txtmandeh.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtmandeh.TextChanged += new System.EventHandler(this.txtmandeh_TextChanged);
-            // 
-            // txtpaid
-            // 
-            this.txtpaid.AcceptsReturn = true;
-            this.txtpaid.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtpaid.BackColor = System.Drawing.Color.White;
-            this.txtpaid.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtpaid.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtpaid.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.txtpaid.ForeColor = System.Drawing.Color.Black;
-            this.txtpaid.Location = new System.Drawing.Point(56, 104);
-            this.txtpaid.MaxLength = 10;
-            this.txtpaid.Name = "txtpaid";
-            this.txtpaid.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtpaid.Size = new System.Drawing.Size(124, 21);
-            this.txtpaid.TabIndex = 8;
-            this.txtpaid.Text = "0";
-            this.txtpaid.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtpaid.TextChanged += new System.EventHandler(this.TextChanged_Action);
-            // 
-            // txtstdno
-            // 
-            this.txtstdno.BackColor = System.Drawing.Color.White;
-            this.txtstdno.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtstdno.Enabled = false;
-            this.txtstdno.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.txtstdno.ForeColor = System.Drawing.Color.Black;
-            this.txtstdno.Location = new System.Drawing.Point(292, 74);
-            this.txtstdno.MaxLength = 50;
-            this.txtstdno.Name = "txtstdno";
-            this.txtstdno.ReadOnly = true;
-            this.txtstdno.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtstdno.Size = new System.Drawing.Size(151, 22);
-            this.txtstdno.TabIndex = 2;
-            this.txtstdno.TabStop = false;
-            this.txtstdno.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtstdno.TextChanged += new System.EventHandler(this.TextChanged_Action);
-            // 
-            // txtlastdate
-            // 
-            this.txtlastdate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtlastdate.BackColor = System.Drawing.Color.Gainsboro;
-            this.txtlastdate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtlastdate.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.txtlastdate.ForeColor = System.Drawing.Color.Black;
-            this.txtlastdate.Location = new System.Drawing.Point(29, 47);
-            this.txtlastdate.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtlastdate.Name = "txtlastdate";
-            this.txtlastdate.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtlastdate.Size = new System.Drawing.Size(151, 22);
-            this.txtlastdate.TabIndex = 6;
-            this.txtlastdate.TabStop = false;
-            this.txtlastdate.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtlastdate.TextChanged += new System.EventHandler(this.TextChanged_Action);
-            // 
-            // txtlastcheck
-            // 
-            this.txtlastcheck.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.txtlastcheck.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.txtlastcheck.BackColor = System.Drawing.Color.White;
-            this.txtlastcheck.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.txtlastcheck.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.txtlastcheck.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.txtlastcheck.ForeColor = System.Drawing.Color.Black;
-            this.txtlastcheck.FormattingEnabled = true;
-            this.txtlastcheck.Items.AddRange(new object[] {
-            "فروردین",
-            "اردیبهشت",
-            "خرداد",
-            "تیر",
-            "مرداد",
-            "شهریور",
-            "مهر",
-            "آبان",
-            "آذر",
-            "دی",
-            "بهمن",
-            "اسفند"});
-            this.txtlastcheck.Location = new System.Drawing.Point(29, 18);
-            this.txtlastcheck.MaxLength = 30;
-            this.txtlastcheck.Name = "txtlastcheck";
-            this.txtlastcheck.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtlastcheck.Size = new System.Drawing.Size(151, 22);
-            this.txtlastcheck.TabIndex = 5;
-            this.txtlastcheck.SelectedIndexChanged += new System.EventHandler(this.txtlastcheck_SelectedIndexChanged);
-            this.txtlastcheck.TextChanged += new System.EventHandler(this.TextChanged_Action);
-            // 
-            // txtmablagh
-            // 
-            this.txtmablagh.AcceptsReturn = true;
-            this.txtmablagh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtmablagh.BackColor = System.Drawing.Color.White;
-            this.txtmablagh.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtmablagh.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtmablagh.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.txtmablagh.ForeColor = System.Drawing.Color.Black;
-            this.txtmablagh.Location = new System.Drawing.Point(56, 76);
-            this.txtmablagh.MaxLength = 10;
-            this.txtmablagh.Name = "txtmablagh";
-            this.txtmablagh.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtmablagh.Size = new System.Drawing.Size(124, 21);
-            this.txtmablagh.TabIndex = 7;
-            this.txtmablagh.Text = "0";
-            this.txtmablagh.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtmablagh.TextChanged += new System.EventHandler(this.TextChanged_Action);
-            // 
-            // txtartcourse
-            // 
-            this.txtartcourse.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.txtartcourse.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.txtartcourse.BackColor = System.Drawing.Color.White;
-            this.txtartcourse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.txtartcourse.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.txtartcourse.ForeColor = System.Drawing.Color.Black;
-            this.txtartcourse.FormattingEnabled = true;
-            this.txtartcourse.Location = new System.Drawing.Point(292, 104);
-            this.txtartcourse.Name = "txtartcourse";
-            this.txtartcourse.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtartcourse.Size = new System.Drawing.Size(151, 22);
-            this.txtartcourse.TabIndex = 3;
-            this.txtartcourse.SelectedIndexChanged += new System.EventHandler(this.TextChanged_Action);
-            this.txtartcourse.Enter += new System.EventHandler(this.txtartcourse_Enter);
-            this.txtartcourse.TextChanged += new System.EventHandler(this.TextChanged_Action);
-            // 
-            // txtname
-            // 
-            this.txtname.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtname.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.txtname.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.txtname.BackColor = System.Drawing.Color.White;
-            this.txtname.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.txtname.Font = new System.Drawing.Font("Tahoma", 8F);
-            this.txtname.ForeColor = System.Drawing.Color.Black;
-            this.txtname.FormattingEnabled = true;
-            this.txtname.Location = new System.Drawing.Point(292, 47);
-            this.txtname.Name = "txtname";
-            this.txtname.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtname.Size = new System.Drawing.Size(151, 21);
-            this.txtname.TabIndex = 1;
-            this.txtname.SelectedIndexChanged += new System.EventHandler(this.TextChanged_Action);
-            this.txtname.TextChanged += new System.EventHandler(this.TextChanged_Action);
-            // 
-            // txtsharh
-            // 
-            this.txtsharh.AcceptsReturn = true;
-            this.txtsharh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtsharh.AutoCompleteCustomSource.AddRange(new string[] {
-            "کارت",
-            "نقد"});
-            this.txtsharh.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.txtsharh.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.txtsharh.BackColor = System.Drawing.Color.White;
-            this.txtsharh.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtsharh.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtsharh.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.txtsharh.ForeColor = System.Drawing.Color.Black;
-            this.txtsharh.Location = new System.Drawing.Point(29, 161);
-            this.txtsharh.MaxLength = 100;
-            this.txtsharh.Name = "txtsharh";
-            this.txtsharh.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtsharh.Size = new System.Drawing.Size(414, 21);
-            this.txtsharh.TabIndex = 10;
-            this.txtsharh.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtsharh.TextChanged += new System.EventHandler(this.TextChanged_Action);
-            // 
-            // txtdate
-            // 
-            this.txtdate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtdate.BackColor = System.Drawing.Color.White;
-            this.txtdate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtdate.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.txtdate.ForeColor = System.Drawing.Color.Black;
-            this.txtdate.Location = new System.Drawing.Point(292, 132);
-            this.txtdate.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtdate.Name = "txtdate";
-            this.txtdate.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtdate.Size = new System.Drawing.Size(151, 22);
-            this.txtdate.TabIndex = 4;
-            this.txtdate.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtdate.TextChanged += new System.EventHandler(this.TextChanged_Action);
-            // 
-            // txtid
-            // 
-            this.txtid.AcceptsReturn = true;
-            this.txtid.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtid.BackColor = System.Drawing.Color.White;
-            this.txtid.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtid.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtid.Enabled = false;
-            this.txtid.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.txtid.ForeColor = System.Drawing.Color.Black;
-            this.txtid.Location = new System.Drawing.Point(292, 20);
-            this.txtid.MaxLength = 10;
-            this.txtid.Name = "txtid";
-            this.txtid.ReadOnly = true;
-            this.txtid.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtid.Size = new System.Drawing.Size(151, 21);
-            this.txtid.TabIndex = 0;
-            this.txtid.TabStop = false;
-            this.txtid.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtid.TextChanged += new System.EventHandler(this.TextChanged_Action);
             // 
             // frmGhabzEdit
             // 

@@ -13,7 +13,7 @@ namespace Rohab
         private static string currentDateShamsi;
 
 
-        public static void currentDate_Setter(bool isShamsi)
+        public static void currentDate_Setter()
         {
             string d, m, y;
             d = DateTime.Today.Date.Day.ToString();
@@ -227,6 +227,29 @@ namespace Rohab
             }
 
             return lastYear + lastMonth + lastDay;
+        }
+
+        public static String[] GetMonths()
+        {
+            if (isShamsi)
+            {
+                return new string[] {
+            "فروردین",
+"اردیبهشت",
+"خرداد",
+"تیر",
+"مرداد",
+"شهریور",
+"مهر",
+"آبان",
+"آذر",
+"دی",
+"بهمن",
+"اسفند"};
+            }
+            else { return new string[] {"January", "February",
+            "March", "April", "May", "June", "July",
+            "August", "October", "November", "December"}; }
         }
     }
 }

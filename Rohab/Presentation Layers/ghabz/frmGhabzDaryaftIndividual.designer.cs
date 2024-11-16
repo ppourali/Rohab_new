@@ -300,6 +300,7 @@ namespace Rohab
             this.txtlastdate.ForeColor = System.Drawing.Color.Black;
             this.txtlastdate.Location = new System.Drawing.Point(29, 47);
             this.txtlastdate.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtlastdate.Mask = "0000/00/00";
             this.txtlastdate.Name = "txtlastdate";
             this.txtlastdate.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtlastdate.Size = new System.Drawing.Size(151, 22);
@@ -318,19 +319,6 @@ namespace Rohab
             this.txtlastcheck.Font = new System.Drawing.Font("Tahoma", 9F);
             this.txtlastcheck.ForeColor = System.Drawing.Color.Black;
             this.txtlastcheck.FormattingEnabled = true;
-            this.txtlastcheck.Items.AddRange(new object[] {
-            "فروردین",
-            "اردیبهشت",
-            "خرداد",
-            "تیر",
-            "مرداد",
-            "شهریور",
-            "مهر",
-            "آبان",
-            "آذر",
-            "دی",
-            "بهمن",
-            "اسفند"});
             this.txtlastcheck.Location = new System.Drawing.Point(29, 18);
             this.txtlastcheck.MaxLength = 30;
             this.txtlastcheck.Name = "txtlastcheck";
@@ -374,8 +362,8 @@ namespace Rohab
             this.txtartcourse.Size = new System.Drawing.Size(151, 22);
             this.txtartcourse.TabIndex = 3;
             this.txtartcourse.SelectedIndexChanged += new System.EventHandler(this.TextChanged_Action);
-            this.txtartcourse.Enter += new System.EventHandler(this.txtartcourse_Enter);
             this.txtartcourse.TextChanged += new System.EventHandler(this.TextChanged_Action);
+            this.txtartcourse.Enter += new System.EventHandler(this.txtartcourse_Enter);
             // 
             // label16
             // 
@@ -471,6 +459,7 @@ namespace Rohab
             this.txtdate.ForeColor = System.Drawing.Color.Black;
             this.txtdate.Location = new System.Drawing.Point(292, 132);
             this.txtdate.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtdate.Mask = "0000/00/00";
             this.txtdate.Name = "txtdate";
             this.txtdate.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtdate.Size = new System.Drawing.Size(151, 22);
