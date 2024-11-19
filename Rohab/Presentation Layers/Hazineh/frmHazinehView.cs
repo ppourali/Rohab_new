@@ -329,5 +329,22 @@ namespace Rohab.Presentation_Layers
                 e.SuppressKeyPress = true;
             }
         }
+
+        private void grdDataViewer_DataSourceChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                long sum = (long)((DataTable)grdDataViewer.DataSource).Compute("Sum(mablagh)", "True");
+                txtsummablagh.Visible = true;
+                pictureBox1.Visible = true;
+                txtsummablagh.Text = sum.ToString("N0");
+            }
+            catch (Exception ex)
+            {
+                txtsummablagh.Visible = true;
+                pictureBox1.Visible = true;
+                txtsummablagh.Text = "0";
+            }
+        }
     }
 }

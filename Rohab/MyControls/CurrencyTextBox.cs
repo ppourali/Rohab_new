@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
@@ -11,22 +8,18 @@ namespace MyControls
 {
     public partial class CurrencyTextBox : TextBox
     {
+        public bool shouldAcceptNegative = false;
+
         public CurrencyTextBox()
         {
             InitializeComponent();
-        }
-
-        protected override void OnPaint(PaintEventArgs pe)
-        {
-            base.OnPaint(pe);
-            
         }
 
         protected override void OnEnter(EventArgs e)
         {
             base.BackColor = Color.Yellow;
             base.Focus();
-            base.SelectAll(); 
+            base.SelectAll();
             base.OnEnter(e);
         }
 
@@ -36,36 +29,30 @@ namespace MyControls
             base.OnLeave(e);
         }
 
-
-        //protected override void OnKeyDown(KeyEventArgs e)
-        //{
-        //    if (e.KeyData == Keys.Enter)
-        //    {
-        //        SendKeys.Send("{TAB}");
-        //        e.SuppressKeyPress = true;
-        //        //Parent.SelectNextControl(this, true, true, true, true);
-
-        //    }
-        //    else
-        //        base.OnKeyDown(e);
-        //}
-
         protected override bool ProcessDialogKey(Keys keyData)
         {
             if (keyData == Keys.Enter)
             {
                 SendKeys.Send("{TAB}");
                 return true;
-                //Parent.SelectNextControl(this, true, true, true, true);
-
             }
             return base.ProcessDialogKey(keyData);
         }
 
         protected override void OnKeyPress(KeyPressEventArgs e)
         {
-            if (!char.IsNumber(e.KeyChar) & (Keys)e.KeyChar != Keys.Back)
+            // Check if the key is a number or the Backspace key
+            if (!char.IsNumber(e.KeyChar) && e.KeyChar != (char)Keys.Back)
             {
+                // Allow the negative sign if shouldAcceptNegative is true and the first character
+                if (shouldAcceptNegative && e.KeyChar == '-' && (string.IsNullOrEmpty(this.Text) || this.Text == "0"))
+                {
+                    this.Text = "-";
+                    e.Handled = true;
+                    return; // Allow the negative sign at the start
+                }
+
+                // Handle any other invalid keys
                 e.Handled = true;
             }
 
@@ -74,18 +61,36 @@ namespace MyControls
 
         protected override void OnTextChanged(EventArgs e)
         {
+            // Ensure the text starts as "0" if empty
             if (base.Text == "")
             {
                 base.Text = "0";
                 base.Focus();
                 base.SelectAll();
             }
+
+            // Format the number as currency with proper handling for negative numbers
             if (base.TextLength > 0)
             {
-                base.Text = long.Parse(base.Text.Replace(",", "")).ToString("N0");
+                long parsedValue;
+
+                // Try to parse the number while ignoring commas for formatting
+                if (long.TryParse(base.Text.Replace(",", ""), out parsedValue))
+                {
+                    // Format the number to include commas as thousand separators
+                    if (parsedValue < 0)
+                    {
+                        // If it's negative, make sure it is formatted correctly
+                        base.Text = parsedValue.ToString("N0");
+                    }
+                    else
+                    {
+                        base.Text = parsedValue.ToString("N0");
+                    }
+                }
             }
 
-            base.Select(base.TextLength, 1);
+            base.Select(base.TextLength, 1);  // Ensure cursor stays at the end of the text
 
             base.OnTextChanged(e);
         }
@@ -94,10 +99,12 @@ namespace MyControls
         {
             get
             {
+                // Remove commas when getting the text for use in calculations or storage
                 return base.Text.Replace(",", "");
             }
             set
             {
+                // Assign value to base Text property
                 base.Text = value;
             }
         }

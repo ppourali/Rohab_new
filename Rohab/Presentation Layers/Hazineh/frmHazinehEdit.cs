@@ -219,6 +219,7 @@ namespace Rohab.Presentation_Layers
 
         private void frmHazinehEdit_Load(object sender, EventArgs e)
         {
+            this.txtmablagh.shouldAcceptNegative = true;
 
         }
 

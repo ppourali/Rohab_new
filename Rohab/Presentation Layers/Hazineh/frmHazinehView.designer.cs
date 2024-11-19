@@ -42,8 +42,11 @@ namespace Rohab.Presentation_Layers
             this.btnfilter = new System.Windows.Forms.Button();
             this.btnprint = new System.Windows.Forms.Button();
             this.btnedit = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.txtsummablagh = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.grdDataViewer)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnexit
@@ -67,9 +70,9 @@ namespace Rohab.Presentation_Layers
             // 
             this.grdDataViewer.AllowUserToAddRows = false;
             this.grdDataViewer.AllowUserToDeleteRows = false;
-            this.grdDataViewer.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.grdDataViewer.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.grdDataViewer.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
             this.grdDataViewer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grdDataViewer.Location = new System.Drawing.Point(20, 79);
@@ -80,6 +83,7 @@ namespace Rohab.Presentation_Layers
             this.grdDataViewer.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grdDataViewer.Size = new System.Drawing.Size(652, 408);
             this.grdDataViewer.TabIndex = 31;
+            this.grdDataViewer.DataSourceChanged += new System.EventHandler(this.grdDataViewer_DataSourceChanged);
             // 
             // btndel
             // 
@@ -119,8 +123,8 @@ namespace Rohab.Presentation_Layers
             // 
             // panel1
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel1.Controls.Add(this.txttodate);
@@ -139,18 +143,20 @@ namespace Rohab.Presentation_Layers
             this.txttodate.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.txttodate.BackColor = System.Drawing.Color.White;
             this.txttodate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txttodate.Culture = new System.Globalization.CultureInfo("en-US");
             this.txttodate.Font = new System.Drawing.Font("Tahoma", 9F);
             this.txttodate.ForeColor = System.Drawing.Color.Black;
             this.txttodate.Location = new System.Drawing.Point(246, 22);
-            
+            this.txttodate.Mask = "0000/00/00";
             this.txttodate.Name = "txttodate";
             this.txttodate.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txttodate.Size = new System.Drawing.Size(130, 22);
             this.txttodate.TabIndex = 3;
             this.txttodate.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txttodate.Leave += new System.EventHandler(this.Leave_Action);
-            this.txttodate.Enter += new System.EventHandler(this.Enter_Action);
+            this.txttodate.ValidatingType = typeof(System.DateTime);
             this.txttodate.TextChanged += new System.EventHandler(this.TextChanged_Action);
+            this.txttodate.Enter += new System.EventHandler(this.Enter_Action);
+            this.txttodate.Leave += new System.EventHandler(this.Leave_Action);
             // 
             // label1
             // 
@@ -171,18 +177,20 @@ namespace Rohab.Presentation_Layers
             this.txtdate.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.txtdate.BackColor = System.Drawing.Color.White;
             this.txtdate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtdate.Culture = new System.Globalization.CultureInfo("en-US");
             this.txtdate.Font = new System.Drawing.Font("Tahoma", 9F);
             this.txtdate.ForeColor = System.Drawing.Color.Black;
             this.txtdate.Location = new System.Drawing.Point(464, 22);
-            
+            this.txtdate.Mask = "0000/00/00";
             this.txtdate.Name = "txtdate";
             this.txtdate.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtdate.Size = new System.Drawing.Size(130, 22);
             this.txtdate.TabIndex = 2;
             this.txtdate.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtdate.Leave += new System.EventHandler(this.Leave_Action);
-            this.txtdate.Enter += new System.EventHandler(this.Enter_Action);
+            this.txtdate.ValidatingType = typeof(System.DateTime);
             this.txtdate.TextChanged += new System.EventHandler(this.TextChanged_Action);
+            this.txtdate.Enter += new System.EventHandler(this.Enter_Action);
+            this.txtdate.Leave += new System.EventHandler(this.Leave_Action);
             // 
             // label2
             // 
@@ -250,6 +258,31 @@ namespace Rohab.Presentation_Layers
             this.btnedit.UseVisualStyleBackColor = true;
             this.btnedit.Click += new System.EventHandler(this.btnedit_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
+            this.pictureBox1.Location = new System.Drawing.Point(299, 494);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 120;
+            this.pictureBox1.TabStop = false;
+            // 
+            // txtsummablagh
+            // 
+            this.txtsummablagh.BackColor = System.Drawing.Color.NavajoWhite;
+            this.txtsummablagh.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtsummablagh.Location = new System.Drawing.Point(224, 493);
+            this.txtsummablagh.Name = "txtsummablagh";
+            this.txtsummablagh.ReadOnly = true;
+            this.txtsummablagh.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtsummablagh.Size = new System.Drawing.Size(70, 21);
+            this.txtsummablagh.TabIndex = 119;
+            this.txtsummablagh.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // frmHazinehView
             // 
             this.AcceptButton = this.btnfilter;
@@ -260,6 +293,8 @@ namespace Rohab.Presentation_Layers
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.CancelButton = this.btnexit;
             this.ClientSize = new System.Drawing.Size(684, 542);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.txtsummablagh);
             this.Controls.Add(this.btnedit);
             this.Controls.Add(this.btnprint);
             this.Controls.Add(this.panel1);
@@ -273,14 +308,16 @@ namespace Rohab.Presentation_Layers
             this.MaximizeBox = false;
             this.Name = "frmHazinehView";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
-            this.Text = "نمایش هزینه های ثبت شده برای مرکز";
-            this.Load += new System.EventHandler(this.frmHazinehView_Load);
+            this.Text = "نمایش هزینه ها";
             this.Activated += new System.EventHandler(this.frmHazinehView_Activated);
+            this.Load += new System.EventHandler(this.frmHazinehView_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.grdDataViewer)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -298,5 +335,7 @@ namespace Rohab.Presentation_Layers
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnprint;
         private System.Windows.Forms.Button btnedit;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox txtsummablagh;
     }
 }
