@@ -9,6 +9,12 @@ namespace MyControls
     public partial class CurrencyTextBox : TextBox
     {
         public bool shouldAcceptNegative = false;
+        private bool isPositive = true;
+
+        public bool isPositiveValue()
+        {
+            return isPositive;
+        }
 
         public CurrencyTextBox()
         {
@@ -77,16 +83,9 @@ namespace MyControls
                 // Try to parse the number while ignoring commas for formatting
                 if (long.TryParse(base.Text.Replace(",", ""), out parsedValue))
                 {
+                    isPositive = parsedValue >= 0;
                     // Format the number to include commas as thousand separators
-                    if (parsedValue < 0)
-                    {
-                        // If it's negative, make sure it is formatted correctly
-                        base.Text = parsedValue.ToString("N0");
-                    }
-                    else
-                    {
-                        base.Text = parsedValue.ToString("N0");
-                    }
+                    base.Text = parsedValue.ToString("N0");
                 }
             }
 

@@ -110,6 +110,8 @@ namespace Rohab.Presentation_Layers
                 btnAdd.Enabled = false;
             }
 
+            txtInOrOut.Text = "پرداخت";
+
         }
 
 
@@ -280,9 +282,18 @@ namespace Rohab.Presentation_Layers
                     txtmablagh.Focus();
                     txtmablagh.SelectAll();
                 }
+
+                if (!txtmablagh.isPositiveValue())
+                {
+                    txtInOrOut.Text = "پرداخت";
+                }
+                else
+                {
+                    txtInOrOut.Text = "دریافت";
+                }
             }
 
-        
+
             if (txtradif.Text == "" || txtcomments.Text == "" || txtmablagh.Text.Trim() == "" || !txtdate.MaskCompleted || txttype.Text.Trim()=="")
                 btnAdd.Enabled = false;
             else if (btnNew.Visible == false)
@@ -369,6 +380,16 @@ namespace Rohab.Presentation_Layers
             txttype.SelectAll();
         }
 
-
+        private void txtInOrOut_TextChanged(object sender, EventArgs e)
+        {
+            if (txtInOrOut.Text.Equals("پرداخت"))
+            {
+                txtInOrOut.BackColor = Color.LightSalmon;
+            }
+            else
+            {
+                txtInOrOut.BackColor = Color.PaleGreen;
+            }
+        }
     }
 }

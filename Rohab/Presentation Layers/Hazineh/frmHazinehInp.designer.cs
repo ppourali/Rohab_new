@@ -43,19 +43,20 @@ namespace Rohab.Presentation_Layers
             this.btnNew = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.grpinfo_box = new System.Windows.Forms.GroupBox();
+            this.txtInOrOut = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.txtradif = new System.Windows.Forms.TextBox();
             this.txttype = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtdate = new DateMaskedTextbox();
-            this.txtmablagh = new CurrencyTextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtcomments = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.txtdate = new MyControls.DateMaskedTextbox();
+            this.txtmablagh = new MyControls.CurrencyTextBox();
             this.groupBox2.SuspendLayout();
             this.grpinfo_box.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
@@ -229,6 +230,7 @@ namespace Rohab.Presentation_Layers
             // grpinfo_box
             // 
             this.grpinfo_box.BackColor = System.Drawing.Color.Transparent;
+            this.grpinfo_box.Controls.Add(this.txtInOrOut);
             this.grpinfo_box.Controls.Add(this.button1);
             this.grpinfo_box.Controls.Add(this.txtradif);
             this.grpinfo_box.Controls.Add(this.txttype);
@@ -250,9 +252,22 @@ namespace Rohab.Presentation_Layers
             this.grpinfo_box.TabIndex = 1;
             this.grpinfo_box.TabStop = false;
             // 
+            // txtInOrOut
+            // 
+            this.txtInOrOut.BackColor = System.Drawing.Color.PaleGreen;
+            this.txtInOrOut.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.txtInOrOut.ForeColor = System.Drawing.Color.Black;
+            this.txtInOrOut.Location = new System.Drawing.Point(36, 80);
+            this.txtInOrOut.Name = "txtInOrOut";
+            this.txtInOrOut.Size = new System.Drawing.Size(100, 23);
+            this.txtInOrOut.TabIndex = 99;
+            this.txtInOrOut.Text = "دربافت";
+            this.txtInOrOut.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.txtInOrOut.TextChanged += new System.EventHandler(this.txtInOrOut_TextChanged);
+            // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(35, 80);
+            this.button1.Location = new System.Drawing.Point(142, 80);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(31, 23);
             this.button1.TabIndex = 98;
@@ -289,18 +304,18 @@ namespace Rohab.Presentation_Layers
             this.txttype.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txttype.ForeColor = System.Drawing.Color.Black;
             this.txttype.FormattingEnabled = true;
-            this.txttype.Location = new System.Drawing.Point(72, 80);
+            this.txttype.Location = new System.Drawing.Point(179, 80);
             this.txttype.MaxLength = 250;
             this.txttype.Name = "txttype";
             this.txttype.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txttype.Size = new System.Drawing.Size(368, 22);
+            this.txttype.Size = new System.Drawing.Size(261, 22);
             this.txttype.Sorted = true;
             this.txttype.TabIndex = 3;
             this.txttype.SelectedIndexChanged += new System.EventHandler(this.TextChanged_Action);
-            this.txttype.Leave += new System.EventHandler(this.Leave_Action);
+            this.txttype.TextChanged += new System.EventHandler(this.TextChanged_Action);
             this.txttype.Enter += new System.EventHandler(this.Enter_Action);
             this.txttype.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyDown_Action);
-            this.txttype.TextChanged += new System.EventHandler(this.TextChanged_Action);
+            this.txttype.Leave += new System.EventHandler(this.Leave_Action);
             // 
             // label4
             // 
@@ -337,47 +352,9 @@ namespace Rohab.Presentation_Layers
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(33, 55);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(33, 14);
+            this.label1.Size = new System.Drawing.Size(36, 14);
             this.label1.TabIndex = 9;
-            this.label1.Text = Localization.GetCurrencyUnit();
-            // 
-            // txtdate
-            // 
-            this.txtdate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtdate.BackColor = System.Drawing.Color.White;
-            this.txtdate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtdate.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.txtdate.ForeColor = System.Drawing.Color.Black;
-            this.txtdate.Location = new System.Drawing.Point(288, 52);
-            this.txtdate.Name = "txtdate";
-            this.txtdate.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtdate.Size = new System.Drawing.Size(149, 22);
-            this.txtdate.TabIndex = 1;
-            this.txtdate.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtdate.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyDown_Action);
-            this.txtdate.Leave += new System.EventHandler(this.Leave_Action);
-            this.txtdate.Enter += new System.EventHandler(this.Enter_Action);
-            this.txtdate.TextChanged += new System.EventHandler(this.TextChanged_Action);
-            // 
-            // txtmablagh
-            // 
-            this.txtmablagh.BackColor = System.Drawing.Color.White;
-            this.txtmablagh.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtmablagh.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.txtmablagh.ForeColor = System.Drawing.Color.Black;
-            this.txtmablagh.Location = new System.Drawing.Point(72, 52);
-            this.txtmablagh.MaxLength = 8;
-            this.txtmablagh.Name = "txtmablagh";
-            this.txtmablagh.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtmablagh.Size = new System.Drawing.Size(153, 22);
-            this.txtmablagh.TabIndex = 2;
-            this.txtmablagh.Text = "0";
-            this.txtmablagh.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtmablagh.TextChanged += new System.EventHandler(this.TextChanged_Action);
-            this.txtmablagh.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyDown_Action);
-            this.txtmablagh.Leave += new System.EventHandler(this.Leave_Action);
-            this.txtmablagh.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress_Action);
-            this.txtmablagh.Enter += new System.EventHandler(this.Enter_Action);
+            this.label1.Text = "Dollar";
             // 
             // label9
             // 
@@ -419,9 +396,9 @@ namespace Rohab.Presentation_Layers
             this.txtcomments.Size = new System.Drawing.Size(404, 22);
             this.txtcomments.TabIndex = 4;
             this.txtcomments.TextChanged += new System.EventHandler(this.TextChanged_Action);
+            this.txtcomments.Enter += new System.EventHandler(this.Enter_Action);
             this.txtcomments.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyDown_Action);
             this.txtcomments.Leave += new System.EventHandler(this.Leave_Action);
-            this.txtcomments.Enter += new System.EventHandler(this.Enter_Action);
             // 
             // label3
             // 
@@ -440,6 +417,46 @@ namespace Rohab.Presentation_Layers
             // 
             this.errorProvider1.ContainerControl = this;
             this.errorProvider1.RightToLeft = true;
+            // 
+            // txtdate
+            // 
+            this.txtdate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtdate.BackColor = System.Drawing.Color.White;
+            this.txtdate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtdate.Culture = new System.Globalization.CultureInfo("en-US");
+            this.txtdate.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.txtdate.ForeColor = System.Drawing.Color.Black;
+            this.txtdate.Location = new System.Drawing.Point(288, 52);
+            this.txtdate.Mask = "0000/00/00";
+            this.txtdate.Name = "txtdate";
+            this.txtdate.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtdate.Size = new System.Drawing.Size(149, 22);
+            this.txtdate.TabIndex = 1;
+            this.txtdate.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtdate.ValidatingType = typeof(System.DateTime);
+            this.txtdate.TextChanged += new System.EventHandler(this.TextChanged_Action);
+            this.txtdate.Enter += new System.EventHandler(this.Enter_Action);
+            this.txtdate.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyDown_Action);
+            this.txtdate.Leave += new System.EventHandler(this.Leave_Action);
+            // 
+            // txtmablagh
+            // 
+            this.txtmablagh.BackColor = System.Drawing.Color.White;
+            this.txtmablagh.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtmablagh.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.txtmablagh.ForeColor = System.Drawing.Color.Black;
+            this.txtmablagh.Location = new System.Drawing.Point(72, 52);
+            this.txtmablagh.MaxLength = 8;
+            this.txtmablagh.Name = "txtmablagh";
+            this.txtmablagh.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtmablagh.Size = new System.Drawing.Size(153, 22);
+            this.txtmablagh.TabIndex = 2;
+            this.txtmablagh.Text = "0";
+            this.txtmablagh.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtmablagh.TextChanged += new System.EventHandler(this.TextChanged_Action);
+            this.txtmablagh.Enter += new System.EventHandler(this.Enter_Action);
+            this.txtmablagh.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyDown_Action);
+            this.txtmablagh.Leave += new System.EventHandler(this.Leave_Action);
             // 
             // frmHazinehInp
             // 
@@ -499,5 +516,6 @@ namespace Rohab.Presentation_Layers
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ComboBox txttype;
         public System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label txtInOrOut;
     }
 }
